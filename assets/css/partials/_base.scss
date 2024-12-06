@@ -1,0 +1,26 @@
+$info-bar-background-color: #131313;
+$black-color: #000000;
+$white-color: #FFFFFF;
+$primary-color: #00d9ec;
+$secondary-color: #1a4f7b;
+
+
+
+
+body{
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, ul, figure{
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}

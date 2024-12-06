@@ -1,0 +1,28 @@
+@import './partials/fonts';
+@import './vendors/bs-x5/bootstrap';
+@import './partials/base';
+
+
+.info-bar{
+    background-color: $info-bar-background-color;
+
+}
+
+.info-bar-inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+    ul{
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+@import './partials/mediaquery';
