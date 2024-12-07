@@ -12200,6 +12200,7 @@ input:focus {
 
 select {
   border: 0;
+  cursor: pointer;
 }
 select:focus {
   outline: none;
@@ -12287,6 +12288,9 @@ select:focus {
   padding: 1rem 2rem;
 }
 
+.main-hero-section {
+  margin-bottom: 10rem;
+}
 .main-hero-section .main-hero-section-inner .main-hero-swiper .swiper-slide figure {
   position: relative;
   width: 100%;
@@ -12315,7 +12319,7 @@ select:focus {
   font-weight: 600;
 }
 .title p {
-  font-size: calc(0.5rem + 0.5vw);
+  font-size: calc(0.7rem + 0.5vw);
   position: relative;
 }
 .title p::before {
@@ -12395,24 +12399,36 @@ select:focus {
   right: 0;
   transform: translate(-50%, -50%);
 }
+.search-fields ul li button.theme-input-hero-section i {
+  color: #1a4f7b;
+  font-weight: bold;
+  transition: ease-in-out 0.3s;
+}
+.search-fields ul li button.theme-input-hero-section:hover i {
+  color: #00d9ec;
+}
 
 @media (max-width: 992px) {
   .info-bar-inner {
     flex-direction: column;
-    justify-content: center;
+    justify-content: center !important;
   }
   .info-bar-inner ul {
     flex-direction: column;
-    justify-content: center;
+    justify-content: center !important;
   }
   .info-bar-inner ul li {
     margin: 0;
+    margin-bottom: 1rem;
   }
   .main-navbar .navbar-nav .nav-link {
     padding: 1.5rem 0 !important;
   }
+  .title {
+    top: 20%;
+  }
   .form {
-    top: 70%;
+    top: 60%;
   }
   .search-fields ul {
     flex-direction: column;

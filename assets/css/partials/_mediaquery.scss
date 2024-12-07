@@ -2,12 +2,14 @@
     // info-bar settings
     .info-bar-inner{
         flex-direction: column;
-        justify-content: center;
+        justify-content: center!important;
         ul{
             flex-direction: column;
-            justify-content: center;
+            justify-content: center!important;
             li{
-                margin: 0;
+                margin:0;
+                margin-bottom: 1rem;
+
             }
         }
     }
@@ -21,8 +23,11 @@
     }
 
     // form-position
+    .title{
+        top: 20%;
+    }
     .form{
-        top: 70%;
+        top: 60%;
     }
     // search-fields-placement
     .search-fields{

@@ -85,6 +85,7 @@
 
 
 .main-hero-section{
+    margin-bottom: 10rem;
     .main-hero-section-inner{
         .main-hero-swiper{
             .swiper-slide{
@@ -124,7 +125,7 @@
         font-weight: 600;
     }
     p{
-        font-size: calc(0.5rem + .5vw);
+        font-size: calc(0.7rem + .5vw);
         position: relative;
         &::before{
             position: absolute;
@@ -207,7 +208,7 @@
             width: 25%;
             .reservation-date{
                 position: relative;
-            }             
+            }          
             .content{
                 width: 100%;
                 i{
@@ -218,6 +219,18 @@
                     transform: translate(-50%,-50%)
                 }
             }
+            button.theme-input-hero-section{
+                i{
+                    color: $secondary-color;
+                    font-weight: bold;
+                    transition: ease-in-out .3s;
+                }
+                &:hover{
+                    i{
+                        color:$primary-color;
+                    }
+                }
+            } 
         }
 
     }
