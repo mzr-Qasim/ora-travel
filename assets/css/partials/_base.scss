@@ -3,6 +3,7 @@ $black-color: #000000;
 $white-color: #FFFFFF;
 $primary-color: #00d9ec;
 $secondary-color: #1a4f7b;
+$secondary-text-color: #bfbfbf;
 
 
 
@@ -13,8 +14,9 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-h1, h2, h3, h4, ul, figure{
+h1, h2, h3, h4, ul, p, figure{
     margin: 0;
+    padding: 0;
 }
 
 ul{

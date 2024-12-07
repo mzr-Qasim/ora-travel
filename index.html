@@ -1,34 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
     <div class="site-wrapper">
         <header class="header">
-                <div class="info-bar">
-                    <div class="container">
-                        <div class="info-bar-inner">
-                            <ul>
-                                <li>a</li>
-                                <li>a</li>
-                                <li>a</li>
-                            </ul>
-                            <a href=""><i class="icon-person-circle"></i><span>Sign In</span></a>
-                        </div><!-- /.info-bar-inner -->
-                    </div><!-- /.container -->
-                </div><!-- /.info-bar -->
+            <div class="info-bar">
+                <div class="container">
+                    <div class="info-bar-inner">
+                        <ul>
+                            <li><a href=""><i class="icon-envelope"></i><span>info@ora.com</span></a></li>
+                            <li class="separator"></li>
+                            <li><a href=""><i class="icon-geo-alt-fill"></i><span>78 5th Ave, New York, NY 10011,
+                                        USA</span></a></li>
+                        </ul>
+                        <a href=""><i class="icon-person-circle"></i><span>Sign In</span></a>
+                    </div><!-- /.info-bar-inner -->
+                </div><!-- /.container -->
+            </div><!-- /.info-bar -->
+            <div class="main-navbar">
+                <div class="container">
+                    <div class="main-navbar-inner">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#"><img src="assets/images/ora-logo.svg" alt=""></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">HOTELS</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            PAGES
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">BLOG</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">PORTFOLIO</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">SHORTCODES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">CONTACT</a>
+                                    </li>
+                                </ul>
+                                <div class="contact-info">
+                                    <i class="telephone-icon icon-telephone-fill"></i>
+                                    <div class="contact-info-inner">
+                                        <ul>
+                                            <li><strong>1-1920-305-3324</strong></li>
+                                            <li><small>Toll Free & 24/7 Available</small></li>
+                                        </ul>
+                                    </div><!-- /.contact-info-inner -->
+                                </div><!-- /.contact-info -->
+                            </div>
+                        </nav>
+                    </div><!-- /.main-navbar-inner -->
+                </div><!-- /.container -->
+            </div><!-- /.main-navbar -->
         </header><!-- /.header -->
-        <main class="main-content"></main><!-- /.main-content -->
+        <main class="main-content">
+            <div class="main-hero-section">
+                <div class="main-hero-section-inner">
+                    <div class="swiper mySwiper main-hero-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="assets/images/main-hero-section-1.jpg" alt="">
+                                </figure>
+                                <div class="image-overlay"></div><!-- /.image-overlay -->
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="assets/images/main-hero-section-2.jpg" alt="">
+                                </figure>
+                                <div class="image-overlay"></div><!-- /.image-overlay -->
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="assets/images/main-hero-section-3.jpg" alt="">
+                                </figure>
+                                <div class="image-overlay"></div><!-- /.image-overlay -->
+                            </div>  
+                            <div class="text">
+                                <h1>TRAVEL</h1>
+                                <p>Book Flights, Hotels and Holiday Packages</p>
+                            </div><!-- /.text -->                         
+                        </div>
+                    </div>
+                </div><!-- /.main-hero-section-inner -->
+            </div><!-- /.main-hero-section -->
+        </main><!-- /.main-content -->
         <footer class="footer"></footer><!-- /.footer -->
     </div><!-- /.site-wrapper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
-
-
-

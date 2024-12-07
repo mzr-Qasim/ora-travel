@@ -12,10 +12,145 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;
-
+    a{
+        display: flex;
+        align-items: center;
+        color: $secondary-text-color;
+        font-size: 0.8rem;
+        span{
+            margin-left: 0.5rem;
+        }
+    }
     ul{
         display: flex;
+        li.separator{
+            display: inline-block;
+            border-right: 1px solid $secondary-text-color;
+        }
+        li{
+            &:nth-child(2){
+                margin: 0 1rem;
+            }
+        }
     }
+    
+}
+
+
+.main-navbar{
+    background-color: $secondary-color;
+    .navbar-brand{
+        img{
+            width: 70px;
+        }
+    }
+    .navbar-nav{
+        flex: 1;
+        justify-content: center;
+        .nav-link{
+            padding: 1.5rem!important;
+            color: $white-color;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+    .contact-info{
+        position: relative;
+        border-left: 4px solid $primary-color;
+        background-color: $white-color;
+        .telephone-icon{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            color: $white-color;
+            background-color: $primary-color;
+            top: 50%;
+            left: 0;
+            transform: translate(-50%,-50%)
+
+        }
+        .contact-info-inner{
+            ul{
+                padding: 1rem 2rem;
+            }
+
+        }
+
+    }
+}
+
+
+.main-hero-section{
+    .main-hero-section-inner{
+        .main-hero-swiper{
+            .swiper-slide{
+                figure{
+                    position: relative;
+                    width: 100%;
+                    aspect-ratio: 1/.4;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                
+            }
+            .text{
+                color: $white-color;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 1;
+                h1{
+                    font-size: calc(2rem + 2vw);
+                    font-weight: 600;
+    
+                }
+                p{
+                    font-size: 1rem;
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        top: 50%;
+                        width: 1.5rem;
+                        height: 2px; 
+                        background-color: yellow; 
+                        left: -40px;
+                    }
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        top: 50%;
+                        width: 1.5rem;
+                        height: 2px; 
+                        background-color: yellow; 
+                        right: -40px;
+                    }
+                }
+    
+            }
+        }
+
+    }
+}
+
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($secondary-color, 0.7);
+    z-index: 1;
+
 }
 
 

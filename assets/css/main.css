@@ -12166,8 +12166,9 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, ul, figure {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, ul, p, figure {
   margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -12187,6 +12188,116 @@ a {
   justify-content: space-between;
   padding: 1rem 0;
 }
+.info-bar-inner a {
+  display: flex;
+  align-items: center;
+  color: #bfbfbf;
+  font-size: 0.8rem;
+}
+.info-bar-inner a span {
+  margin-left: 0.5rem;
+}
 .info-bar-inner ul {
   display: flex;
+}
+.info-bar-inner ul li.separator {
+  display: inline-block;
+  border-right: 1px solid #bfbfbf;
+}
+.info-bar-inner ul li:nth-child(2) {
+  margin: 0 1rem;
+}
+
+.main-navbar {
+  background-color: #1a4f7b;
+}
+.main-navbar .navbar-brand img {
+  width: 70px;
+}
+.main-navbar .navbar-nav {
+  flex: 1;
+  justify-content: center;
+}
+.main-navbar .navbar-nav .nav-link {
+  padding: 1.5rem !important;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.main-navbar .contact-info {
+  position: relative;
+  border-left: 4px solid #00d9ec;
+  background-color: #FFFFFF;
+}
+.main-navbar .contact-info .telephone-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  background-color: #00d9ec;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.main-navbar .contact-info .contact-info-inner ul {
+  padding: 1rem 2rem;
+}
+
+.main-hero-section .main-hero-section-inner .main-hero-swiper .swiper-slide figure {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/0.4;
+}
+.main-hero-section .main-hero-section-inner .main-hero-swiper .swiper-slide figure img {
+  width: 100%;
+  height: 100%;
+}
+.main-hero-section .main-hero-section-inner .main-hero-swiper .text {
+  color: #FFFFFF;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.main-hero-section .main-hero-section-inner .main-hero-swiper .text h1, .main-hero-section .main-hero-section-inner .main-hero-swiper .text .h1 {
+  font-size: calc(2rem + 2vw);
+  font-weight: 600;
+}
+.main-hero-section .main-hero-section-inner .main-hero-swiper .text p {
+  font-size: 1rem;
+  position: relative;
+}
+.main-hero-section .main-hero-section-inner .main-hero-swiper .text p::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  width: 1.5rem;
+  height: 2px;
+  background-color: yellow;
+  left: -40px;
+}
+.main-hero-section .main-hero-section-inner .main-hero-swiper .text p::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  width: 1.5rem;
+  height: 2px;
+  background-color: yellow;
+  right: -40px;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 79, 123, 0.7);
+  z-index: 1;
 }/*# sourceMappingURL=main.css.map */
