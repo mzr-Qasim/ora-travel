@@ -1,1 +1,36 @@
+@media (max-width:992px){
+    // info-bar settings
+    .info-bar-inner{
+        flex-direction: column;
+        justify-content: center;
+        ul{
+            flex-direction: column;
+            justify-content: center;
+            li{
+                margin: 0;
+            }
+        }
+    }
+    // main-navbar settings
+    .main-navbar{
+        .navbar-nav{
+            .nav-link{
+                padding: 1.5rem 0!important;
+            }
+        }
+    }
 
+    // form-position
+    .form{
+        top: 70%;
+    }
+    // search-fields-placement
+    .search-fields{
+        ul{
+            flex-direction: column;
+            li{
+                width: 100%;
+            }
+        }
+    }
+}

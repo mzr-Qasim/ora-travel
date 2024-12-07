@@ -91,55 +91,99 @@
                 figure{
                     position: relative;
                     width: 100%;
-                    aspect-ratio: 1/.4;
+                    height: 750px;
+                    aspect-ratio: 1/1;
                     img{
+                        position: absolute;
                         width: 100%;
                         height: 100%;
+                        object-fit: cover;
                     }
                 }
                 
-            }
-            .text{
-                color: $white-color;
-                text-align: center;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                z-index: 1;
-                h1{
-                    font-size: calc(2rem + 2vw);
-                    font-weight: 600;
-    
-                }
-                p{
-                    font-size: 1rem;
-                    position: relative;
-                    &::before{
-                        position: absolute;
-                        content: "";
-                        top: 50%;
-                        width: 1.5rem;
-                        height: 2px; 
-                        background-color: yellow; 
-                        left: -40px;
-                    }
-                    &::after{
-                        position: absolute;
-                        content: "";
-                        top: 50%;
-                        width: 1.5rem;
-                        height: 2px; 
-                        background-color: yellow; 
-                        right: -40px;
-                    }
-                }
-    
             }
         }
 
     }
 }
+
+
+
+
+.title{
+    color: $white-color;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    // margin-bottom: 5rem;
+    h1{
+        font-size: calc(2rem + 2vw);
+        font-weight: 600;
+    }
+    p{
+        font-size: calc(0.5rem + .5vw);
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 50%;
+            width: 1.5rem;
+            height: 2px; 
+            background-color: $pseudo-element-decoration-color; 
+            left: -40px;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            top: 50%;
+            width: 1.5rem;
+            height: 2px; 
+            background-color: $pseudo-element-decoration-color; 
+            right: -40px;
+        }
+    }
+
+}   
+
+
+.form{
+    width: 100%;
+    color: $white-color;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    .tabs{
+        button.hotels-button{
+            color: $secondary-color;
+            background-color: $white-color;
+        }
+        button.packges-button{
+            color: $white-color;
+            background-color: $secondary-color;
+        }
+        button{
+            i{
+                padding-right: 1rem;
+                font-size: 20px;
+            }
+            span{
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 1rem;
+                letter-spacing: 3px;
+            }
+        }
+    }
+}
+              
+
+
 
 
 .image-overlay {
@@ -153,6 +197,32 @@
 
 }
 
+
+
+.search-fields{
+    ul{
+        display: flex;
+        
+        li{
+            width: 25%;
+            .reservation-date{
+                position: relative;
+            }             
+            .content{
+                width: 100%;
+                i{
+                    color: $bootstrap-default-text-color;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translate(-50%,-50%)
+                }
+            }
+        }
+
+    }
+
+}
 
 
 
