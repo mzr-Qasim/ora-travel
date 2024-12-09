@@ -375,7 +375,9 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                will-change: transform; 
                 animation: rotateWorld 20s linear infinite;
+                transform: translate3d(0, 0, 0);
             }
             @keyframes rotateWorld {
                 0% {
@@ -411,13 +413,16 @@
             display: flex;
             li{
                 width: 33%;
-                figure{
-                    width: 100px;
-                    aspect-ratio: 1/1;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
+                .logo{
+                    width: 100%;
+                    figure{
+                        width: 100px;
+                        aspect-ratio: 1/1;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
                     }
                 }
             }
