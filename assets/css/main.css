@@ -12556,11 +12556,11 @@ select:focus {
   }
   .swiper-nav-next {
     top: 100%;
-    left: 95%;
+    left: 15%;
   }
   .swiper-nav-prev {
     top: 100%;
-    left: 85%;
+    left: 5%;
   }
 }
 @media (max-width: 567px) {
