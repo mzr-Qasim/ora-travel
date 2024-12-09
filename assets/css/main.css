@@ -12170,6 +12170,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.row {
+  --bs-gutter-x: 0;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, ul, p, figure {
   margin: 0;
   padding: 0;
@@ -12507,20 +12511,25 @@ select:focus {
   transition: transform 0.5s ease;
 }
 .mySwiper2 .swiper-slide .shutter .destinations-link {
+  display: flex;
+  align-items: center;
   position: absolute;
   background-color: #FFFFFF;
   color: #1a4f7b;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: calc(0.2rem + 0.5vw);
-  padding: 1rem;
+  padding: 0.8rem;
   top: 80%;
   left: 40%;
   transform: translate(-50%, -50%);
   transition: ease-in-out 0.5s;
 }
 .mySwiper2 .swiper-slide .shutter .destinations-link span {
-  padding-left: 1rem;
+  padding-left: 0.5rem;
+}
+.mySwiper2 .swiper-slide .shutter .destinations-link span i {
+  font-size: 1rem;
 }
 .mySwiper2 .swiper-slide .shutter .destinations-link:hover {
   background-color: #1a4f7b;
@@ -12564,6 +12573,7 @@ select:focus {
   margin-bottom: 2rem;
 }
 .ora-info-awards-left-section .section-link a {
+  font-size: calc(0.4rem + 0.5vw);
   color: #1a4f7b;
   border: 2px solid #1a4f7b;
 }
