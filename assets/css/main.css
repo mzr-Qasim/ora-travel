@@ -12187,6 +12187,8 @@ a {
 
 input {
   border: 0;
+  margin: 0;
+  padding: 0;
 }
 input::-moz-placeholder {
   color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
@@ -12199,6 +12201,8 @@ input:focus {
 }
 
 select {
+  margin: 0;
+  padding: 0;
   border: 0;
   cursor: pointer;
 }
@@ -12288,9 +12292,6 @@ select:focus {
   padding: 1rem 2rem;
 }
 
-.main-hero-section {
-  margin-bottom: 10rem;
-}
 .main-hero-section .main-hero-section-inner .main-hero-swiper .swiper-slide figure {
   position: relative;
   width: 100%;
@@ -12349,13 +12350,13 @@ select:focus {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 10;
 }
 .form .tabs button.hotels-button {
   color: #1a4f7b;
   background-color: #FFFFFF;
 }
-.form .tabs button.packges-button {
+.form .tabs button.packages-button {
   color: #FFFFFF;
   background-color: #1a4f7b;
 }
@@ -12406,6 +12407,60 @@ select:focus {
 }
 .search-fields ul li button.theme-input-hero-section:hover i {
   color: #00d9ec;
+}
+
+.locations-section .title-locations {
+  position: relative;
+  padding: 2rem;
+}
+.locations-section .title-locations .locations-swiper-navigation {
+  position: absolute;
+}
+
+.mySwiper2 .swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+.mySwiper2 .swiper-slide .shutter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 217, 236, 0.9);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+.mySwiper2 .swiper-slide .shutter .destinations-link {
+  position: absolute;
+  background-color: #FFFFFF;
+  color: #1a4f7b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: calc(0.2rem + 0.5vw);
+  padding: 1rem;
+  top: 80%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  transition: ease-in-out 0.5s;
+}
+.mySwiper2 .swiper-slide .shutter .destinations-link span {
+  padding-left: 1rem;
+}
+.mySwiper2 .swiper-slide .shutter .destinations-link:hover {
+  background-color: #1a4f7b;
+  color: #FFFFFF;
+}
+.mySwiper2 .swiper-slide figure {
+  width: 100%;
+  aspect-ratio: 1/0.7;
+}
+.mySwiper2 .swiper-slide figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mySwiper2 .swiper-slide:hover .shutter {
+  transform: translateX(0);
 }
 
 @media (max-width: 992px) {

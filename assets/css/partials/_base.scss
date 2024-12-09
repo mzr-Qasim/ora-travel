@@ -35,6 +35,8 @@ a{
 
 input{
     border: 0;
+    margin: 0;
+    padding: 0;
     &::placeholder{
         color: $bootstrap-default-text-color;
     }
@@ -45,6 +47,8 @@ input{
 
 
 select{
+    margin: 0;
+    padding: 0;
     border: 0;
     cursor: pointer;
     &:focus{

@@ -85,7 +85,6 @@
 
 
 .main-hero-section{
-    margin-bottom: 10rem;
     .main-hero-section-inner{
         .main-hero-swiper{
             .swiper-slide{
@@ -158,13 +157,13 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
-    z-index: 1;
+    z-index: 10;
     .tabs{
         button.hotels-button{
             color: $secondary-color;
             background-color: $white-color;
         }
-        button.packges-button{
+        button.packages-button{
             color: $white-color;
             background-color: $secondary-color;
         }
@@ -181,6 +180,7 @@
             }
         }
     }
+
 }
               
 
@@ -235,6 +235,69 @@
 
     }
 
+}
+
+
+.locations-section{
+    .title-locations{
+        position: relative;
+        padding: 2rem;
+        .locations-swiper-navigation{
+            position: absolute;
+        }
+    }
+}
+
+
+
+
+.mySwiper2{
+    .swiper-slide{
+        position: relative;
+        overflow: hidden;
+        .shutter{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($primary-color, 0.9);
+            transform: translateX(-100%); 
+            transition: transform 0.5s ease;
+            .destinations-link{
+                position: absolute;
+                background-color: $white-color;
+                color: $secondary-color;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: calc(0.2rem + .5vw);
+                padding: 1rem;
+                top: 80%;
+                left: 40%;
+                transform: translate(-50%,-50%);
+                transition: ease-in-out .5s;
+                span{
+                    padding-left: 1rem;
+                }
+                &:hover{
+                    background-color: $secondary-color;
+                    color: $white-color;
+                }
+            }
+        }
+        figure{
+            width: 100%;
+            aspect-ratio: 1/.7;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &:hover{
+            .shutter{
+                transform: translateX(0);
+            }
+        }
+    }    
 }
 
 
