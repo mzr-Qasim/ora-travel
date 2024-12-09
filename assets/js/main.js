@@ -20,7 +20,6 @@ var swiper = new Swiper(".mySwiper2", {
   slidesPerView: 1,
   loop:true,
   simulateTouch: false,
-  spaceBetween: 0,
   autoplay: {
     delay: 4000,
     disableOnInteraction: false,

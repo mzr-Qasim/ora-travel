@@ -12411,7 +12411,7 @@ select:focus {
 
 .locations-section .title-locations {
   position: relative;
-  padding: 2rem;
+  text-align: center;
 }
 .locations-section .title-locations .locations-swiper-navigation {
   position: absolute;
