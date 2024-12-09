@@ -328,16 +328,12 @@
 
 .ora-info-awards{
     margin-bottom: $section-space-large;
+    color: $bootstrap-default-text-color;
 }
 
 .ora-info-awards-left-section{
-    color: $bootstrap-default-text-color;
     .ora-info-title{
-        h4{
-            color: $secondary-color;
-            font-size: calc(0.7rem + .5vw);
-            margin-bottom: $text-space-small;
-        }
+
         p{
             font-size: calc(0.5rem + .5vw);
             margin-bottom: $text-space-small;
@@ -368,9 +364,12 @@
 
 
 .ora-info-awards-mid-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .moving-image{
         figure{
-            width: 350px;
+            width: 300px;
             aspect-ratio: 1/1;
             img{
                 width: 100%;

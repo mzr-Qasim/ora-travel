@@ -103,6 +103,19 @@ select{
 
 }
 
+
+.ora-info-awards-section-title{
+    color: $secondary-color;
+    font-size: calc(0.7rem + .5vw);
+    margin-bottom: $text-space-small;
+}
+
+.ora-info-awards-section-paragraph{
+    font-size: calc(0.5rem + .5vw);
+    margin-bottom: $text-space-small;
+}
+
+
 .custom-next-btn:after {
     content: "\e903";
     font-family: 'IcoMoon'; 

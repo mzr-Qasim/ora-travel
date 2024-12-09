@@ -12246,6 +12246,17 @@ select:focus {
   width: 100%;
 }
 
+.ora-info-awards-section-title {
+  color: #1a4f7b;
+  font-size: calc(0.7rem + 0.5vw);
+  margin-bottom: 1rem;
+}
+
+.ora-info-awards-section-paragraph {
+  font-size: calc(0.5rem + 0.5vw);
+  margin-bottom: 1rem;
+}
+
 .custom-next-btn:after {
   content: "\e903";
   font-family: "IcoMoon";
@@ -12551,16 +12562,9 @@ select:focus {
 
 .ora-info-awards {
   margin-bottom: 6rem;
-}
-
-.ora-info-awards-left-section {
   color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
 }
-.ora-info-awards-left-section .ora-info-title h4, .ora-info-awards-left-section .ora-info-title .h4 {
-  color: #1a4f7b;
-  font-size: calc(0.7rem + 0.5vw);
-  margin-bottom: 1rem;
-}
+
 .ora-info-awards-left-section .ora-info-title p {
   font-size: calc(0.5rem + 0.5vw);
   margin-bottom: 1rem;
@@ -12582,8 +12586,13 @@ select:focus {
   color: #FFFFFF;
 }
 
+.ora-info-awards-mid-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .ora-info-awards-mid-section .moving-image figure {
-  width: 350px;
+  width: 300px;
   aspect-ratio: 1/1;
 }
 .ora-info-awards-mid-section .moving-image figure img {
@@ -12646,6 +12655,9 @@ select:focus {
   .swiper-nav-prev {
     top: 100%;
     left: 5%;
+  }
+  .ora-info-awards-mid-section .moving-image figure {
+    width: 200px;
   }
 }
 @media (max-width: 567px) {
