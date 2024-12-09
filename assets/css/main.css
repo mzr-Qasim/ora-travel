@@ -12166,6 +12166,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.row {
+  --bs-gutter-x: 0;
+}
+
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, ul, p, figure {
   margin: 0;
   padding: 0;
