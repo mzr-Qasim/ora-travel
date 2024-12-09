@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?adtz0t");
-  src: url("fonts/icomoon.eot?adtz0t#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?adtz0t") format("truetype"), url("fonts/icomoon.woff?adtz0t") format("woff"), url("fonts/icomoon.svg?adtz0t#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?t4f859");
+  src: url("fonts/icomoon.eot?t4f859#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?t4f859") format("truetype"), url("fonts/icomoon.woff?t4f859") format("woff"), url("fonts/icomoon.svg?t4f859#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -23,175 +23,179 @@
 }
 
 .icon-arrow-down:before {
-  content: "\e900";
-}
-
-.icon-arrow-left:before {
   content: "\e901";
 }
 
-.icon-arrow-right:before {
+.icon-arrow-left:before {
   content: "\e902";
 }
 
-.icon-arrow-up:before {
+.icon-arrow-right:before {
   content: "\e903";
 }
 
-.icon-boat:before {
+.icon-arrow-up:before {
   content: "\e904";
 }
 
-.icon-briefcase:before {
+.icon-boat:before {
   content: "\e905";
 }
 
-.icon-calendar-check:before {
+.icon-briefcase:before {
   content: "\e906";
 }
 
-.icon-calendar-fill:before {
+.icon-calendar-check:before {
   content: "\e907";
 }
 
-.icon-count-1:before {
+.icon-calendar-fill:before {
   content: "\e908";
 }
 
-.icon-count-2:before {
+.icon-count-1:before {
   content: "\e909";
 }
 
-.icon-count-3:before {
+.icon-count-2:before {
   content: "\e90a";
 }
 
-.icon-count-4:before {
+.icon-count-3:before {
   content: "\e90b";
 }
 
-.icon-envelope:before {
+.icon-count-4:before {
   content: "\e90c";
 }
 
-.icon-facebook:before {
+.icon-envelope:before {
   content: "\e90d";
 }
 
-.icon-flight:before {
+.icon-facebook:before {
   content: "\e90e";
 }
 
-.icon-geo-alt:before {
+.icon-flight:before {
   content: "\e90f";
 }
 
-.icon-geo-alt-fill:before {
+.icon-geo-alt:before {
   content: "\e910";
 }
 
-.icon-globe:before {
+.icon-geo-alt-fill:before {
   content: "\e911";
 }
 
-.icon-honey-moon-packs:before {
+.icon-globe:before {
   content: "\e912";
 }
 
-.icon-hotels:before {
+.icon-honey-moon-packs:before {
   content: "\e913";
 }
 
-.icon-instagram:before {
+.icon-hotels:before {
   content: "\e914";
 }
 
-.icon-key:before {
+.icon-instagram:before {
   content: "\e915";
 }
 
-.icon-key-icon:before {
+.icon-key:before {
   content: "\e916";
 }
 
-.icon-linkedin:before {
+.icon-key-icon:before {
   content: "\e917";
 }
 
-.icon-parachute:before {
+.icon-linkedin:before {
   content: "\e918";
 }
 
-.icon-passport:before {
+.icon-parachute:before {
   content: "\e919";
 }
 
-.icon-person-circle:before {
+.icon-passport:before {
   content: "\e91a";
 }
 
-.icon-plate-with-spoon:before {
+.icon-person-circle:before {
   content: "\e91b";
 }
 
-.icon-plus:before {
+.icon-plate-with-spoon:before {
   content: "\e91c";
 }
 
-.icon-search:before {
+.icon-plus:before {
   content: "\e91d";
 }
 
-.icon-ship:before {
+.icon-search:before {
   content: "\e91e";
 }
 
-.icon-star-fill:before {
+.icon-ship:before {
   content: "\e91f";
 }
 
-.icon-suitcase:before {
+.icon-star-fill:before {
   content: "\e920";
 }
 
-.icon-telephone:before {
+.icon-suitcase:before {
   content: "\e921";
 }
 
-.icon-telephone-fill:before {
+.icon-telephone:before {
   content: "\e922";
 }
 
-.icon-tent:before {
+.icon-telephone-fill:before {
   content: "\e923";
 }
 
-.icon-toptop:before {
+.icon-tent:before {
   content: "\e924";
 }
 
-.icon-travel:before {
+.icon-toptop:before {
   content: "\e925";
 }
 
-.icon-twitter-x:before {
+.icon-travel:before {
   content: "\e926";
 }
 
-.icon-umbrella:before {
+.icon-twitter-x:before {
   content: "\e927";
 }
 
-.icon-van:before {
+.icon-umbrella:before {
   content: "\e928";
 }
 
-.icon-watch:before {
+.icon-van:before {
   content: "\e929";
 }
 
-.icon-youtube:before {
+.icon-watch:before {
   content: "\e92a";
+}
+
+.icon-youtube:before {
+  content: "\e92b";
+}
+
+.icon-car:before {
+  content: "\e900";
 }
 
 /*!
@@ -12166,10 +12170,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.row {
-  --bs-gutter-x: 0;
-}
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, ul, p, figure {
   margin: 0;
   padding: 0;
@@ -12214,10 +12214,24 @@ select:focus {
   outline: none;
 }
 
+.strip-style {
+  width: 2rem;
+  height: 2px;
+  background-color: #ffd838;
+}
+
 .theme-tab-button {
   padding: 1rem;
   display: inline-flex;
   align-items: center;
+}
+
+.theme-links-button {
+  padding: 0.5rem 1rem;
+  display: inline-flex;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: ease-in-out 0.3s;
 }
 
 .theme-input-hero-section {
@@ -12229,7 +12243,7 @@ select:focus {
 }
 
 .custom-next-btn:after {
-  content: "\e902";
+  content: "\e903";
   font-family: "IcoMoon";
   font-size: 1.5rem;
   color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
@@ -12237,7 +12251,7 @@ select:focus {
 }
 
 .custom-prev-btn:after {
-  content: "\e901";
+  content: "\e902";
   font-family: "IcoMoon";
   font-size: 1.5rem;
   color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
@@ -12449,6 +12463,9 @@ select:focus {
   color: #00d9ec;
 }
 
+.locations-section {
+  margin-bottom: 6rem;
+}
 .locations-section .title-locations {
   height: 100%;
   position: relative;
@@ -12521,6 +12538,64 @@ select:focus {
 }
 .mySwiper2 .swiper-slide:hover .shutter {
   transform: translateX(0);
+}
+
+.ora-info-awards {
+  margin-bottom: 6rem;
+}
+
+.ora-info-awards-left-section {
+  color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+.ora-info-awards-left-section .ora-info-title h4, .ora-info-awards-left-section .ora-info-title .h4 {
+  color: #1a4f7b;
+  font-size: calc(0.7rem + 0.5vw);
+  margin-bottom: 1rem;
+}
+.ora-info-awards-left-section .ora-info-title p {
+  font-size: calc(0.5rem + 0.5vw);
+  margin-bottom: 1rem;
+}
+.ora-info-awards-left-section .strip-style {
+  margin-bottom: 1rem;
+}
+.ora-info-awards-left-section .ora-info p {
+  font-size: calc(0.5rem + 0.5vw);
+  margin-bottom: 2rem;
+}
+.ora-info-awards-left-section .section-link a {
+  color: #1a4f7b;
+  border: 2px solid #1a4f7b;
+}
+.ora-info-awards-left-section .section-link a:hover {
+  background-color: #1a4f7b;
+  color: #FFFFFF;
+}
+
+.ora-info-awards-mid-section .moving-image figure {
+  width: 350px;
+  aspect-ratio: 1/1;
+}
+.ora-info-awards-mid-section .moving-image figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  animation: rotateWorld 20s linear infinite;
+}
+@keyframes rotateWorld {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.ora-info-awards-mid-section .ora-info-awards-mid-section-info {
+  text-align: center;
+}
+.ora-info-awards-mid-section .ora-info-awards-mid-section-info b {
+  font-size: calc(4rem + 1vw);
 }
 
 @media (max-width: 992px) {

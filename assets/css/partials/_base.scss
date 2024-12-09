@@ -1,3 +1,4 @@
+// colors
 $info-bar-background-color: #131313;
 $black-color: #000000;
 $white-color: #FFFFFF;
@@ -7,6 +8,14 @@ $secondary-text-color: #bfbfbf;
 $pseudo-element-decoration-color: #ffd838;
 $bootstrap-default-text-color:   light-dark(rgb(118, 118, 118), rgb(133, 133, 133)) ;
 
+// margin & space
+// section spacing
+$section-space-small: 4rem;
+$section-space-large: 6rem;
+// text spacing
+$text-space-small: 1rem;
+$text-space-large: 2rem;
+
 
 body{
     overflow: hidden;
@@ -14,10 +23,6 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-
-.row {
-    --bs-gutter-x: 0;
-}
 
 
 
@@ -65,10 +70,26 @@ select{
 }
 
 
+.strip-style{
+    width: 2rem;
+    height: 2px;
+    background-color: $pseudo-element-decoration-color;
+}
+
+
 .theme-tab-button{
     padding: 1rem;
     display: inline-flex;
     align-items: center;
+}
+
+
+.theme-links-button{
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: ease-in-out .3s;
 }
 
 .theme-input-hero-section{
@@ -81,7 +102,7 @@ select{
 }
 
 .custom-next-btn:after {
-    content: "\e902";
+    content: "\e903";
     font-family: 'IcoMoon'; 
     font-size: 1.5rem;
     color: $bootstrap-default-text-color; 
@@ -89,7 +110,7 @@ select{
   }
 
 .custom-prev-btn:after {
-    content: "\e901"; 
+    content: "\e902"; 
     font-family: 'IcoMoon'; 
     font-size: 1.5rem;
     color: $bootstrap-default-text-color; 
