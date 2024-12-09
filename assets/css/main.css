@@ -12491,4 +12491,10 @@ select:focus {
   .search-fields ul li {
     width: 100%;
   }
+}
+@media (max-width: 567px) {
+  .mySwiper2 .swiper-slide .shutter .destinations-link {
+    top: 50%;
+    left: 50%;
+  }
 }/*# sourceMappingURL=main.css.map */
