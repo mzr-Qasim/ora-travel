@@ -71,3 +71,43 @@ select{
     width: 100%;
 
 }
+
+.custom-next-btn:after {
+    content: "\e902";
+    font-family: 'IcoMoon'; 
+    font-size: 1.5rem;
+    color: $bootstrap-default-text-color; 
+    background-color: transparent;
+  }
+
+.custom-prev-btn:after {
+    content: "\e901"; 
+    font-family: 'IcoMoon'; 
+    font-size: 1.5rem;
+    color: $bootstrap-default-text-color; 
+    background-color: transparent;
+}
+
+
+
+
+
+
+.swiper-nav-next{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 100%;
+    left: 95%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+}
+.swiper-nav-prev {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 100%;
+  left: 75%;
+  transform: translate(-50%,-50%);
+  z-index: 1000;
+}

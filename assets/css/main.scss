@@ -240,11 +240,31 @@
 
 .locations-section{
     .title-locations{
+        height: 100%;
         position: relative;
-        text-align: center;
-        .locations-swiper-navigation{
-            position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h4{
+            font-size: calc(.5rem + 1vw);
+            font-weight: 600;
+            color: $secondary-color;
+            letter-spacing: 2px;
+            &:not(:last-child){
+                padding-bottom: 0.5rem;
+            }
         }
+        figure{
+            width: 100px;
+            aspect-ratio: 1/1;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
     }
 }
 
