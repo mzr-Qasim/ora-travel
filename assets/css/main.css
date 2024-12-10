@@ -12709,7 +12709,7 @@ select:focus {
 
 .packages-content {
   display: flex;
-  border: 1px solid light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border: 1px solid rgba(191, 191, 191, 0.5);
   border-top: 0;
 }
 .packages-content .packages-title {
@@ -12718,19 +12718,24 @@ select:focus {
   padding: 2rem 0;
 }
 .packages-content .packages-title .packages-title-inner {
-  border-right: 1px solid light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-right: 1px solid rgba(191, 191, 191, 0.5);
   padding: 0 2rem;
 }
-.packages-content .packages-title .packages-title-inner h4, .packages-content .packages-title .packages-title-inner .h4 {
-  line-height: 1.5rem;
+.packages-content .packages-title .packages-title-inner a {
+  color: #1a4f7b;
+  display: block;
   font-size: calc(0.8rem + 0.2vw);
   font-weight: 600;
   margin-bottom: 1rem;
 }
-.packages-content .packages-title .packages-title-inner p {
+.packages-content .packages-title .packages-title-inner a.location {
+  color: #1a4f7b;
+  display: inline-block;
   font-size: calc(0.6rem + 0.2vw);
+  font-weight: 400;
+  margin-bottom: 0;
 }
-.packages-content .packages-title .packages-title-inner p i {
+.packages-content .packages-title .packages-title-inner a.location i {
   margin-right: 0.5rem;
 }
 .packages-content .packages-details {
@@ -12745,9 +12750,9 @@ select:focus {
   font-size: calc(1rem + 0.2vw);
 }
 .packages-content .packages-details ul li i {
-  color: red;
-  font-size: calc(1rem + 0.2vw);
-  margin-right: 0.3rem;
+  color: #FFD700;
+  font-size: calc(0.5rem + 0.2vw);
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 992px) {
@@ -12810,7 +12815,7 @@ select:focus {
     text-align: center;
     padding: 0.5rem 0;
     border-right: 0;
-    border-bottom: 1px solid light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-bottom: 1px solid rgba(191, 191, 191, 0.5);
   }
   .packages-content .packages-details {
     width: 100%;

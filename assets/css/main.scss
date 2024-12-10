@@ -517,27 +517,34 @@
 
 .packages-content{
     display: flex;
-    border: 1px  solid $bootstrap-default-text-color;
+    border: 1px solid $light-border;
     border-top: 0;
     .packages-title{
         color: $secondary-color;
         width: 60%;
         padding: 2rem 0;
         .packages-title-inner{
-            border-right: 1px solid $bootstrap-default-text-color;
+            border-right: 1px solid $light-border;
             padding: 0 2rem;
-            h4{
-                line-height: 1.5rem;
+            a{
+                color: $secondary-color;
+                display: block;
                 font-size: calc(0.8rem + .2vw);
                 font-weight: 600;
                 margin-bottom: 1rem;
+
             }
-            p{
+            a.location{
+                color: $secondary-color;
+                display: inline-block;
                 font-size: calc(0.6rem + .2vw);
+                font-weight: 400;
+                margin-bottom: 0;
                 i{
                     margin-right: 0.5rem;
                 }
-            }      
+            }
+    
         }
         
     }
@@ -556,9 +563,9 @@
                     }
                 }
                 i{
-                    color: red;
-                    font-size: calc(1rem + .2vw);
-                    margin-right: 0.3rem;
+                    color: #FFD700;
+                    font-size: calc(0.5rem + .2vw);
+                    margin-right: 0.5rem;
                 }
             }
         }
