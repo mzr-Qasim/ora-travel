@@ -1,70 +1,106 @@
-@media (max-width:992px){
+@media (max-width:992px) {
+
     // info-bar settings
-    .info-bar-inner{
+    .info-bar-inner {
         flex-direction: column;
-        justify-content: center!important;
-        ul{
+        justify-content: center !important;
+
+        ul {
             flex-direction: column;
-            justify-content: center!important;
-            li{
-                margin:0;
+            justify-content: center !important;
+
+            li {
+                margin: 0;
                 margin-bottom: 1rem;
 
             }
         }
     }
+
     // main-navbar settings
-    .main-navbar{
-        .navbar-nav{
-            .nav-link{
-                padding: 1.5rem 0!important;
+    .main-navbar {
+        .navbar-nav {
+            .nav-link {
+                padding: 1.5rem 0 !important;
             }
         }
     }
 
     // form-position
-    .title{
+    .title {
         top: 20%;
     }
-    .form{
+
+    .form {
         top: 60%;
     }
+
     // search-fields-placement
-    .search-fields{
-        ul{
+    .search-fields {
+        ul {
             flex-direction: column;
-            li{
+
+            li {
                 width: 100%;
             }
         }
     }
-    .title-locations{
+
+    .title-locations {
         padding: 2rem 0;
     }
-    .swiper-nav-next{
+
+    .swiper-nav-next {
         top: 100%;
         left: 15%;
     }
+
     .swiper-nav-prev {
-      top: 100%;
-      left: 5%;
+        top: 100%;
+        left: 5%;
     }
 
-    .ora-info-awards-mid-section{
+    .ora-info-awards-mid-section {
         margin: $section-space-small 0;
-        .moving-image{
-            figure{
+
+        .moving-image {
+            figure {
                 width: 200px;
             }
         }
-    } 
+    }
+
     // ora-features-section-1
-    .ora-features-section-1-inner{
-        .content{
+    .ora-features-section-1-inner {
+        .content {
             padding: 2rem 0;
             border: 0;
-        } 
+        }
     }
+
+    // packages-swiper-content-info-settings
+    .packages-content {
+        flex-direction: column;
+
+        .packages-title {
+            width: 100%;
+            padding: 0.5rem ;
+            .packages-title-inner{
+                text-align: center;
+                padding: 0.5rem 0;
+                border-right: 0;
+                border-bottom: 1px solid $bootstrap-default-text-color;
+            }
+
+        }
+
+        .packages-details {
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+        }
+    }
+
 
 }
 
@@ -72,31 +108,17 @@
 
 
 
-@media (max-width:567px){
+@media (max-width:567px) {
+
     // locations-swiper small screen shutter settings
-    .mySwiper2{
-        .swiper-slide{
-            .shutter{
-                .destinations-link{
+    .mySwiper2 {
+        .swiper-slide {
+            .shutter {
+                .destinations-link {
                     top: 50%;
                     left: 50%;
-                } 
+                }
             }
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

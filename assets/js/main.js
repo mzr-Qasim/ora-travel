@@ -55,10 +55,10 @@ var swiper = new Swiper(".mySwiper3", {
   slidesPerView: 1,
   loop:true,
   simulateTouch: false,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 4000,
+  //   disableOnInteraction: false,
+  // },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
