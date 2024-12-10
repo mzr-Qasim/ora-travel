@@ -170,12 +170,12 @@
         button{
             i{
                 padding-right: 1rem;
-                font-size: 20px;
+                font-size: calc(0.4rem + .5vw);
             }
             span{
                 text-transform: uppercase;
                 font-weight: 600;
-                font-size: 1rem;
+                font-size: calc(0.4rem + .5vw);
                 letter-spacing: 3px;
             }
         }
@@ -429,6 +429,73 @@
         }
     }
 }
+
+
+.ora-features-section-1{
+    background-image: url('../images/ora-features-section-1.jpg');
+    background-size: cover; 
+    background-position: center; 
+
+}
+
+.ora-features-section-1-inner{
+    .content{
+        color: $secondary-color;
+        padding: 4rem 3rem;
+        border-left: 2px solid $primary-color;
+        height: 100%;
+            ul{
+                display: flex;
+                flex-direction: column;
+                li{
+                    &:not(:last-child){
+                        margin-bottom: 1rem;
+                    }
+                    i{
+                        font-size: calc(2.5rem + 1vw);
+                        display: inline-block;
+                        transition: ease-in-out .3s;
+                    }
+                    small{
+                        font-size: calc(0.5rem + .5vw);
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                    }
+                    p{
+                        color: $black-color;
+                        font-size: calc(0.4rem + .5vw);
+                    }
+                }
+
+            }
+ 
+        &:hover{
+            i{
+                transform: scaleX(-1);
+            }
+        }
+    }
+    .first-content{
+        border: 0;
+        padding-left: 0;
+    }
+    .last-content{
+        padding-right: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

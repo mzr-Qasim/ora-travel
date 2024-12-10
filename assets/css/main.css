@@ -12242,7 +12242,7 @@ select:focus {
   background-color: #FFFFFF;
   color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
   padding: 1rem;
-  height: 5rem;
+  height: 4rem;
   width: 100%;
 }
 
@@ -12431,12 +12431,12 @@ select:focus {
 }
 .form .tabs button i {
   padding-right: 1rem;
-  font-size: 20px;
+  font-size: calc(0.4rem + 0.5vw);
 }
 .form .tabs button span {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: calc(0.4rem + 0.5vw);
   letter-spacing: 3px;
 }
 
@@ -12646,6 +12646,51 @@ select:focus {
      object-fit: cover;
 }
 
+.ora-features-section-1 {
+  background-image: url("../images/ora-features-section-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.ora-features-section-1-inner .content {
+  color: #1a4f7b;
+  padding: 4rem 3rem;
+  border-left: 2px solid #00d9ec;
+  height: 100%;
+}
+.ora-features-section-1-inner .content ul {
+  display: flex;
+  flex-direction: column;
+}
+.ora-features-section-1-inner .content ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.ora-features-section-1-inner .content ul li i {
+  font-size: calc(2.5rem + 1vw);
+  display: inline-block;
+  transition: ease-in-out 0.3s;
+}
+.ora-features-section-1-inner .content ul li small, .ora-features-section-1-inner .content ul li .small {
+  font-size: calc(0.5rem + 0.5vw);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.ora-features-section-1-inner .content ul li p {
+  color: #000000;
+  font-size: calc(0.4rem + 0.5vw);
+}
+.ora-features-section-1-inner .content:hover i {
+  transform: scaleX(-1);
+}
+.ora-features-section-1-inner .first-content {
+  border: 0;
+  padding-left: 0;
+}
+.ora-features-section-1-inner .last-content {
+  padding-right: 0;
+}
+
 @media (max-width: 992px) {
   .info-bar-inner {
     flex-direction: column;
@@ -12690,6 +12735,10 @@ select:focus {
   }
   .ora-info-awards-mid-section .moving-image figure {
     width: 200px;
+  }
+  .ora-features-section-1-inner .content {
+    padding: 2rem 0;
+    border: 0;
   }
 }
 @media (max-width: 567px) {
