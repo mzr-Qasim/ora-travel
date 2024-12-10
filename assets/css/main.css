@@ -12651,12 +12651,13 @@ select:focus {
   background-image: url("../images/ora-features-section-1.jpg");
   background-size: cover;
   background-position: center;
+  margin-bottom: 6rem;
 }
 
 .ora-features-section-1-inner .content {
   color: #1a4f7b;
   padding: 4rem 3rem;
-  border-left: 2px solid #00d9ec;
+  border-left: 1px solid #00d9ec;
   height: 100%;
 }
 .ora-features-section-1-inner .content ul {
@@ -12690,6 +12691,17 @@ select:focus {
 }
 .ora-features-section-1-inner .last-content {
   padding-right: 0;
+}
+
+.popular-packages-section {
+  margin-bottom: 6rem;
+}
+
+.popular-packages-swiper .mySwiper3 figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 992px) {
