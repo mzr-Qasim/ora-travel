@@ -12293,6 +12293,26 @@ select:focus {
   z-index: 1000;
 }
 
+.packages-nav-next {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 100%;
+  left: 95% !important;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.packages-nav-prev {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 100%;
+  left: 90% !important;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
 .info-bar {
   background-color: #131313;
 }
@@ -12385,11 +12405,11 @@ select:focus {
   z-index: 1;
 }
 .title h1, .title .h1 {
-  font-size: calc(2rem + 2vw);
+  font-size: calc(3.5rem + 0.5vw);
   font-weight: 600;
 }
 .title p {
-  font-size: calc(0.7rem + 0.5vw);
+  font-size: calc(1rem + 0.2vw);
   position: relative;
 }
 .title p::before {
@@ -12431,12 +12451,12 @@ select:focus {
 }
 .form .tabs button i {
   padding-right: 1rem;
-  font-size: calc(0.4rem + 0.5vw);
+  font-size: calc(0.8rem + 0.2vw);
 }
 .form .tabs button span {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: calc(0.4rem + 0.5vw);
+  font-size: calc(0.7rem + 0.2vw);
   letter-spacing: 3px;
 }
 
@@ -12490,7 +12510,7 @@ select:focus {
   justify-content: center;
 }
 .locations-section .title-locations h4, .locations-section .title-locations .h4 {
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(1.3rem + 0.2vw);
   font-weight: 600;
   color: #1a4f7b;
   letter-spacing: 2px;
@@ -12697,10 +12717,34 @@ select:focus {
   margin-bottom: 6rem;
 }
 
-.popular-packages-swiper .mySwiper3 figure {
+.popular-packages-title-and-buttons {
+  position: relative;
+  margin-bottom: 2rem;
+  display: flex;
+}
+.popular-packages-title-and-buttons h4, .popular-packages-title-and-buttons .h4 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: calc(1.3rem + 0.2vw);
+  font-weight: 600;
+  color: #1a4f7b;
+  letter-spacing: 2px;
+}
+.popular-packages-title-and-buttons h4::after, .popular-packages-title-and-buttons .h4::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  width: 1.5rem;
+  height: 2px;
+  background-color: #ffd838;
+  right: -50px;
+  transform: translate(-50%, -50%);
+}
+
+.popular-packages-swiper .mySwiper3 .swiper-slide figure {
   aspect-ratio: 1/0.7;
 }
-.popular-packages-swiper .mySwiper3 figure img {
+.popular-packages-swiper .mySwiper3 .swiper-slide figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -12803,6 +12847,9 @@ select:focus {
   .ora-features-section-1-inner .content {
     padding: 2rem 0;
     border: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
   }
   .packages-content {
     flex-direction: column;

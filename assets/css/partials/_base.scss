@@ -8,9 +8,11 @@ $secondary-text-color: #bfbfbf;
 $pseudo-element-decoration-color: #ffd838;
 $bootstrap-default-text-color:   light-dark(rgb(118, 118, 118), rgb(133, 133, 133)) ;
 $light-border: rgba($secondary-text-color, 0.5);  
+$gold-color: #FFD700;
 
 // margin & space
 // section spacing
+$section-space-xs-small: 2rem;
 $section-space-small: 4rem;
 $section-space-large: 6rem;
 // text spacing
@@ -161,4 +163,26 @@ select{
   left: 75%;
   transform: translate(-50%,-50%);
   z-index: 1000;
+}
+
+
+.packages-nav-next{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 100%;
+    left: 95%!important;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+}
+
+
+.packages-nav-prev{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 100%;
+    left: 90%!important;
+    transform: translate(-50%,-50%);
+    z-index: 100;
 }
