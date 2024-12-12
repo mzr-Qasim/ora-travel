@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?t4f859");
-  src: url("fonts/icomoon.eot?t4f859#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?t4f859") format("truetype"), url("fonts/icomoon.woff?t4f859") format("woff"), url("fonts/icomoon.svg?t4f859#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?wjzs5c");
+  src: url("fonts/icomoon.eot?wjzs5c#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?wjzs5c") format("truetype"), url("fonts/icomoon.woff?wjzs5c") format("woff"), url("fonts/icomoon.svg?wjzs5c#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12297,9 +12297,10 @@ select:focus {
   position: absolute;
   width: 10px;
   height: 10px;
-  top: 100%;
-  left: 95% !important;
-  transform: translate(-50%, -50%);
+  top: 0;
+  padding-top: 5rem;
+  left: 98% !important;
+  transform: translate(0, -50%);
   z-index: 100;
 }
 
@@ -12307,9 +12308,10 @@ select:focus {
   position: absolute;
   width: 10px;
   height: 10px;
-  top: 100%;
-  left: 90% !important;
-  transform: translate(-50%, -50%);
+  top: 0;
+  padding-top: 5rem;
+  left: 93% !important;
+  transform: translate(0, -50%);
   z-index: 100;
 }
 
@@ -12717,8 +12719,11 @@ select:focus {
   margin-bottom: 6rem;
 }
 
-.popular-packages-title-and-buttons {
+.popular-packages-section-inner {
   position: relative;
+}
+
+.popular-packages-title-and-buttons {
   margin-bottom: 2rem;
   display: flex;
 }
@@ -12799,6 +12804,63 @@ select:focus {
   margin-right: 0.5rem;
 }
 
+.why-us-section {
+  margin-bottom: 6rem;
+}
+
+.why-us-section-wrapper::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  z-index: -1;
+}
+
+.why-us-section-wrapper {
+  position: relative;
+}
+.why-us-section-wrapper .why-choose-bgc-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+.why-us-section-wrapper .content-wrap {
+  padding: 5rem 0;
+}
+.why-us-section-wrapper .content-wrap ul li:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.why-us-section-wrapper .content-wrap ul li .content-box h4, .why-us-section-wrapper .content-wrap ul li .content-box .h4 {
+  font-size: calc(1rem + 0.2vw);
+  margin-bottom: 2rem;
+  color: #1a4f7b;
+  font-weight: 600;
+}
+.why-us-section-wrapper .content-wrap ul li .content-box h4.main-title, .why-us-section-wrapper .content-wrap ul li .content-box .main-title.h4 {
+  font-weight: 600;
+  font-size: calc(1.2rem + 0.2vw);
+}
+.why-us-section-wrapper .content-wrap ul li .content-box p {
+  font-weight: 300;
+  font-size: calc(0.8rem + 0.2vw);
+  color: #FFFFFF;
+}
+.why-us-section-wrapper .content-wrap ul li .content-box-feature {
+  display: flex;
+  align-items: center;
+}
+.why-us-section-wrapper .content-wrap ul li .content-box-feature .content-box-icon {
+  margin-right: 2rem;
+}
+.why-us-section-wrapper .content-wrap ul li .content-box-feature .content-box-icon i {
+  font-size: calc(3rem + 0.2vw);
+  color: #1a4f7b;
+}
+
 @media (max-width: 992px) {
   .info-bar-inner {
     flex-direction: column;
@@ -12874,5 +12936,11 @@ select:focus {
   .mySwiper2 .swiper-slide .shutter .destinations-link {
     top: 50%;
     left: 50%;
+  }
+  .packages-nav-next {
+    display: none;
+  }
+  .packages-nav-prev {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

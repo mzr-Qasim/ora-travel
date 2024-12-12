@@ -113,6 +113,12 @@
 
 @media (max-width:567px) {
 
+   
+}
+
+
+@media (max-width:567px) {
+
     // locations-swiper small screen shutter settings
     .mySwiper2 {
         .swiper-slide {
@@ -123,5 +129,15 @@
                 }
             }
         }
+    }
+
+    // packages-swiper small screen shutter settings
+    .packages-nav-next{
+        display: none;
+    }
+    
+    
+    .packages-nav-prev{
+        display: none;
     }
 }
