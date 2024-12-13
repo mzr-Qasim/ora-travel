@@ -114,14 +114,12 @@
 
 
 @media (max-width:768px) {
-    .follow-adventure-section-wrapper{
-        .follow-adventure-col-wrapper{
-            .row [class^="col-"]{
-                padding-bottom: 1rem;
-                &:not(:last-child){
-                    padding-right: 0;
-                }
+    .follow-adventure-col-wrapper{
+        .row [class^="col-"]{
+            &:not(:last-child){
+                padding-right: 0;
             }
+    
         }
     }
 

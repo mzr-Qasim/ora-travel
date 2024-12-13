@@ -708,38 +708,66 @@
         content: '';
         position: absolute;
         inset: 0;
-        background-color: $black-color;
-        opacity: 0.8;
+        background-color: $secondary-color;
+        opacity: 0.95;
         z-index: -1;
     }
     .follow-adventure-title{
+        color: $white-color;
         text-align: center;
+    } 
+
+}
+
+
+
+
+
+
+
+.follow-adventure-col-wrapper{
+    .row [class^="col-"]{
+        padding-bottom: 1rem;
+        &:not(:last-child){
+            padding-right: 1rem;
+        }
+
     }
-    .follow-adventure-col-wrapper{
-        .row [class^="col-"]{
-            padding-bottom: 1rem;
+    ul{
+        li{
             &:not(:last-child){
-                padding-right: 2rem;
+                margin-bottom: 1rem;
+            }
+            .content-box{
+                display: flex;
+                align-items: center;
+                background-color: $white-color;
+                height: 100%!important;
+                padding: 1.25rem;
+
+                .icon{
+                    i{
+                        font-size: calc(2.5rem + .2vw);
+                        margin-right: 2rem;
+                        color: $secondary-color;
+                    }
+                }
+                .info{
+                    h4{
+                        letter-spacing: 2px;
+                        font-size: calc(1rem + .2vw);
+                        text-transform: uppercase;
+                        color: $secondary-color;
+                        font-weight: 600;
+                    }
+                }
+
+
+                
             }
 
+
         }
-        ul{
-            li{
-                &:not(:last-child){
-                    margin-bottom: 1rem;
-                }
-                .content-box{
-                    background-color: $white-color;
-                    height: 100%;
-                    padding: 1.25rem;
-
-
-                    
-                }
-
-            }
-        }
-
     }
 
 }
