@@ -12855,6 +12855,10 @@ select:focus {
   color: #1a4f7b;
 }
 
+.adventure-activities {
+  margin-bottom: 6rem;
+}
+
 .follow-adventure-section {
   margin-bottom: 6rem;
 }
@@ -12878,46 +12882,55 @@ select:focus {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.follow-adventure-section-wrapper::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: #1a4f7b;
-  opacity: 0.95;
-  z-index: -1;
-}
 .follow-adventure-section-wrapper .follow-adventure-title {
   color: #FFFFFF;
   text-align: center;
 }
-
-.follow-adventure-col-wrapper .row [class^=col-] {
-  padding-bottom: 1rem;
-}
-.follow-adventure-col-wrapper .row [class^=col-]:not(:last-child) {
-  padding-right: 1rem;
-}
-.follow-adventure-col-wrapper ul li:not(:last-child) {
+.follow-adventure-section-wrapper .follow-adventure-title h4, .follow-adventure-section-wrapper .follow-adventure-title .h4 {
+  font-size: calc(1.3rem + 0.2vw);
+  letter-spacing: 4px;
   margin-bottom: 1rem;
 }
-.follow-adventure-col-wrapper ul li .content-box {
+
+.follow-adventure-col-wrapper .row [class^=col-] {
+  padding: 1rem;
+}
+.follow-adventure-col-wrapper .follow-adventure-content {
+  overflow: hidden;
+  position: relative;
   display: flex;
   align-items: center;
   background-color: #FFFFFF;
-  height: 100% !important;
+  height: 100%;
   padding: 1.25rem;
+  z-index: 1;
 }
-.follow-adventure-col-wrapper ul li .content-box .icon i {
+.follow-adventure-col-wrapper .follow-adventure-content .icon i {
   font-size: calc(2.5rem + 0.2vw);
   margin-right: 2rem;
   color: #1a4f7b;
 }
-.follow-adventure-col-wrapper ul li .content-box .info h4, .follow-adventure-col-wrapper ul li .content-box .info .h4 {
+.follow-adventure-col-wrapper .follow-adventure-content .info h4, .follow-adventure-col-wrapper .follow-adventure-content .info .h4 {
   letter-spacing: 2px;
   font-size: calc(1rem + 0.2vw);
   text-transform: uppercase;
   color: #1a4f7b;
   font-weight: 600;
+}
+.follow-adventure-col-wrapper .follow-adventure-content::after {
+  content: "";
+  position: absolute;
+  transform: translateX(-100%);
+  width: 100%;
+  height: 100%;
+  background-color: #00d9ec;
+  transition: transform 0.5s ease;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.follow-adventure-col-wrapper .follow-adventure-content:hover::after {
+  transform: translateX(0);
 }
 
 @media (max-width: 992px) {
@@ -12989,11 +13002,6 @@ select:focus {
     width: 100%;
     text-align: center;
     padding: 1rem;
-  }
-}
-@media (max-width: 768px) {
-  .follow-adventure-col-wrapper .row [class^=col-]:not(:last-child) {
-    padding-right: 0;
   }
 }
 @media (max-width: 567px) {
