@@ -12822,7 +12822,7 @@ select:focus {
   z-index: -1;
 }
 .why-us-section-wrapper .content-wrap {
-  padding: 12rem 0;
+  padding: 10rem 0;
 }
 .why-us-section-wrapper .content-wrap ul li:not(:last-child) {
   margin-bottom: 3rem;
@@ -12860,10 +12860,13 @@ select:focus {
 }
 
 .follow-adventure-section-wrapper {
+  min-height: 80vh;
+  padding: 5rem 0;
   position: relative;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  padding: 40rem 0;
+  gap: 1.25rem;
 }
 .follow-adventure-section-wrapper .follow-adventure-bgc-img {
   position: absolute;
@@ -12874,6 +12877,31 @@ select:focus {
   z-index: -2;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.follow-adventure-section-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #000000;
+  opacity: 0.8;
+  z-index: -1;
+}
+.follow-adventure-section-wrapper .follow-adventure-title {
+  text-align: center;
+}
+.follow-adventure-section-wrapper .follow-adventure-col-wrapper .row [class^=col-] {
+  padding-bottom: 1rem;
+}
+.follow-adventure-section-wrapper .follow-adventure-col-wrapper .row [class^=col-]:not(:last-child) {
+  padding-right: 2rem;
+}
+.follow-adventure-section-wrapper .follow-adventure-col-wrapper ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.follow-adventure-section-wrapper .follow-adventure-col-wrapper ul li .content-box {
+  background-color: #FFFFFF;
+  height: 100%;
+  padding: 1.25rem;
 }
 
 @media (max-width: 992px) {
@@ -12945,6 +12973,14 @@ select:focus {
     width: 100%;
     text-align: center;
     padding: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .follow-adventure-section-wrapper .follow-adventure-col-wrapper .row [class^=col-] {
+    padding-bottom: 1rem;
+  }
+  .follow-adventure-section-wrapper .follow-adventure-col-wrapper .row [class^=col-]:not(:last-child) {
+    padding-right: 0;
   }
 }
 @media (max-width: 567px) {
