@@ -105,6 +105,19 @@
     }
 
 
+    .adventure-activities-col-wrapper{
+        .row [class^="col-"] {
+            &:not(:last-child){
+                padding-bottom: 1rem;
+            }
+
+        }      
+    }
+
+
+
+
+
 
 
 }

@@ -12859,6 +12859,314 @@ select:focus {
   margin-bottom: 6rem;
 }
 
+.adventure-activites-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.adventure-activites-title h4, .adventure-activites-title .h4 {
+  font-size: calc(1.3rem + 0.2vw);
+  margin-bottom: 1rem;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: #1a4f7b;
+  position: relative;
+}
+.adventure-activites-title p {
+  margin-bottom: 2rem;
+}
+
+.adventure-activities-col-wrapper .first-col {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.adventure-activities-col-wrapper .first-col figure {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1.4;
+}
+.adventure-activities-col-wrapper .first-col figure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+.adventure-activities-col-wrapper .first-col figure figcaption {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+}
+.adventure-activities-col-wrapper .first-col figure figcaption .adventure-activities-content {
+  color: #FFFFFF;
+  text-align: center;
+}
+.adventure-activities-col-wrapper .first-col figure figcaption .adventure-activities-content h4, .adventure-activities-col-wrapper .first-col figure figcaption .adventure-activities-content .h4 {
+  text-transform: uppercase;
+  font-size: calc(1.3rem + 0.2vw);
+  letter-spacing: 4px;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+  text-wrap: pretty;
+  font-weight: 600;
+}
+.adventure-activities-col-wrapper .first-col figure figcaption .adventure-activities-content h4.start-from-text, .adventure-activities-col-wrapper .first-col figure figcaption .adventure-activities-content .start-from-text.h4 {
+  font-weight: 400;
+  font-size: calc(1rem + 0.2vw);
+}
+.adventure-activities-col-wrapper .first-col figure figcaption .adventure-activities-content p {
+  margin-bottom: 1rem;
+  font-size: calc(0.6rem + 0.2vw);
+}
+.adventure-activities-col-wrapper .first-col figure figcaption .adventure-activities-content a {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-size: calc(0.4rem + 0.5vw);
+  border: 2px solid #FFFFFF;
+}
+.adventure-activities-col-wrapper .first-col::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1a4f7b;
+  opacity: 0.8;
+  z-index: -1;
+}
+.adventure-activities-col-wrapper .second-col {
+  height: 50%;
+  width: 100%;
+}
+.adventure-activities-col-wrapper .second-col .top-content {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.adventure-activities-col-wrapper .second-col .top-content figure {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/0.5;
+}
+.adventure-activities-col-wrapper .second-col .top-content figure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.adventure-activities-col-wrapper .second-col .top-content figure figcaption {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 90%;
+  left: 0;
+  padding-left: 2rem;
+  transform: translate(0, -50%);
+}
+.adventure-activities-col-wrapper .second-col .top-content figure figcaption .activities-link .activities-links-button {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #1a4f7b;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+.adventure-activities-col-wrapper .second-col .top-content figure figcaption .activities-link .activities-links-button span {
+  font-weight: 400;
+}
+.adventure-activities-col-wrapper .second-col .top-content figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00d9ec;
+  opacity: 0.8;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+.adventure-activities-col-wrapper .second-col .top-content figure:hover::after {
+  transform: translateY(0);
+}
+.adventure-activities-col-wrapper .second-col .bottom-content {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.adventure-activities-col-wrapper .second-col .bottom-content figure {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/0.5;
+}
+.adventure-activities-col-wrapper .second-col .bottom-content figure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.adventure-activities-col-wrapper .second-col .bottom-content figure figcaption {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  top: 90%;
+  left: 0;
+  padding-left: 2rem;
+  transform: translate(0, -50%);
+}
+.adventure-activities-col-wrapper .second-col .bottom-content figure figcaption .activities-link .activities-links-button {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #1a4f7b;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+.adventure-activities-col-wrapper .second-col .bottom-content figure figcaption .activities-link .activities-links-button span {
+  font-weight: 400;
+}
+.adventure-activities-col-wrapper .second-col .bottom-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00d9ec;
+  opacity: 0.8;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+.adventure-activities-col-wrapper .second-col .bottom-content:hover::after {
+  transform: translateY(0);
+}
+.adventure-activities-col-wrapper .third-col {
+  height: 50%;
+  width: 100%;
+}
+.adventure-activities-col-wrapper .third-col .top-content {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.adventure-activities-col-wrapper .third-col .top-content figure {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/0.5;
+}
+.adventure-activities-col-wrapper .third-col .top-content figure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.adventure-activities-col-wrapper .third-col .top-content figure figcaption {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 90%;
+  left: 0;
+  padding-left: 2rem;
+  transform: translate(0, -50%);
+}
+.adventure-activities-col-wrapper .third-col .top-content figure figcaption .activities-link .activities-links-button {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #1a4f7b;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+.adventure-activities-col-wrapper .third-col .top-content figure figcaption .activities-link .activities-links-button span {
+  font-weight: 400;
+}
+.adventure-activities-col-wrapper .third-col .top-content figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00d9ec;
+  opacity: 0.8;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+.adventure-activities-col-wrapper .third-col .top-content figure:hover::after {
+  transform: translateY(0);
+}
+.adventure-activities-col-wrapper .third-col .bottom-content {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.adventure-activities-col-wrapper .third-col .bottom-content figure {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/0.5;
+}
+.adventure-activities-col-wrapper .third-col .bottom-content figure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.adventure-activities-col-wrapper .third-col .bottom-content figure figcaption {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 90%;
+  left: 0;
+  padding-left: 2rem;
+  transform: translate(0, -50%);
+}
+.adventure-activities-col-wrapper .third-col .bottom-content figure figcaption .activities-link .activities-links-button {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #1a4f7b;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+.adventure-activities-col-wrapper .third-col .bottom-content figure figcaption .activities-link .activities-links-button span {
+  font-weight: 400;
+}
+.adventure-activities-col-wrapper .third-col .bottom-content figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00d9ec;
+  opacity: 0.8;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+.adventure-activities-col-wrapper .third-col .bottom-content figure:hover::after {
+  transform: translateY(0);
+}
+
 .follow-adventure-section {
   margin-bottom: 6rem;
 }
@@ -13002,6 +13310,9 @@ select:focus {
     width: 100%;
     text-align: center;
     padding: 1rem;
+  }
+  .adventure-activities-col-wrapper .row [class^=col-]:not(:last-child) {
+    padding-bottom: 1rem;
   }
 }
 @media (max-width: 567px) {
