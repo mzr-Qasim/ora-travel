@@ -13241,6 +13241,42 @@ select:focus {
   transform: translateX(0);
 }
 
+.talk-to-local-section {
+  margin-bottom: 6rem;
+}
+
+.talk-to-local-inner {
+  display: flex;
+}
+.talk-to-local-inner .left-section {
+  width: 60%;
+  position: relative;
+}
+.talk-to-local-inner .left-section figure {
+  width: 100%;
+  aspect-ratio: 1/0.7;
+}
+.talk-to-local-inner .left-section figure img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.talk-to-local-inner .left-section figure figcaption h4, .talk-to-local-inner .left-section figure figcaption .h4 {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+.talk-to-local-inner .right-section {
+  width: 40%;
+  padding-left: 5rem;
+}
+.talk-to-local-inner .right-section .content {
+  width: 100%;
+}
+
 @media (max-width: 992px) {
   .info-bar-inner {
     flex-direction: column;
