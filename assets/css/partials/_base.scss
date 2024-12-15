@@ -102,6 +102,58 @@ select{
     transition: ease-in-out .3s;
 }
 
+
+.theme-links-button-secondary-border{
+    font-size: calc(0.5rem + .5vw);
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: ease-in-out .3s;
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+
+    &:hover{
+        background-color: $secondary-color;
+        color: $white-color;
+    }
+}
+
+
+.theme-links-button-white-border{
+    font-size: calc(0.5rem + .5vw);
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: ease-in-out .3s;
+    border: 2px solid $white-color;
+    color: $white-color;
+
+    &:hover{
+        background-color: $white-color;
+        color: $black-color;
+    }
+}
+
+.link-hover{
+    color: $secondary-color;
+    display: block;
+    font-size: calc(0.8rem + .2vw);
+    font-weight: 600;
+    transition: ease-in .3s;
+    &:hover{
+        color: $primary-color;
+    }
+}
+
+.theme-custom-para{
+    font-size: calc(0.8rem + .2vw);
+    line-height: 2rem;
+}
+
+
+
 .theme-input-hero-section{
     background-color: $white-color;
     color: $bootstrap-default-text-color;
@@ -115,14 +167,10 @@ select{
 
 .ora-info-awards-section-title{
     color: $secondary-color;
-    font-size: calc(0.7rem + .5vw);
+    font-size: calc(1rem + .2vw);
     margin-bottom: $text-space-small;
 }
 
-.ora-info-awards-section-paragraph{
-    font-size: calc(0.5rem + .5vw);
-    margin-bottom: $text-space-small;
-}
 
 
 .custom-next-btn:after {

@@ -12238,6 +12238,52 @@ select:focus {
   transition: ease-in-out 0.3s;
 }
 
+.theme-links-button-secondary-border {
+  font-size: calc(0.5rem + 0.5vw);
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: ease-in-out 0.3s;
+  border: 2px solid #1a4f7b;
+  color: #1a4f7b;
+}
+.theme-links-button-secondary-border:hover {
+  background-color: #1a4f7b;
+  color: #FFFFFF;
+}
+
+.theme-links-button-white-border {
+  font-size: calc(0.5rem + 0.5vw);
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: ease-in-out 0.3s;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+.theme-links-button-white-border:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.link-hover {
+  color: #1a4f7b;
+  display: block;
+  font-size: calc(0.8rem + 0.2vw);
+  font-weight: 600;
+  transition: ease-in 0.3s;
+}
+.link-hover:hover {
+  color: #00d9ec;
+}
+
+.theme-custom-para {
+  font-size: calc(0.8rem + 0.2vw);
+  line-height: 2rem;
+}
+
 .theme-input-hero-section {
   background-color: #FFFFFF;
   color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
@@ -12248,12 +12294,7 @@ select:focus {
 
 .ora-info-awards-section-title {
   color: #1a4f7b;
-  font-size: calc(0.7rem + 0.5vw);
-  margin-bottom: 1rem;
-}
-
-.ora-info-awards-section-paragraph {
-  font-size: calc(0.5rem + 0.5vw);
+  font-size: calc(1rem + 0.2vw);
   margin-bottom: 1rem;
 }
 
@@ -12610,24 +12651,13 @@ select:focus {
 }
 
 .ora-info-awards-left-section .ora-info-title p {
-  font-size: calc(0.5rem + 0.5vw);
   margin-bottom: 1rem;
 }
 .ora-info-awards-left-section .strip-style {
   margin-bottom: 1rem;
 }
 .ora-info-awards-left-section .ora-info p {
-  font-size: calc(0.5rem + 0.5vw);
   margin-bottom: 2rem;
-}
-.ora-info-awards-left-section .section-link a {
-  font-size: calc(0.4rem + 0.5vw);
-  color: #1a4f7b;
-  border: 2px solid #1a4f7b;
-}
-.ora-info-awards-left-section .section-link a:hover {
-  background-color: #1a4f7b;
-  color: #FFFFFF;
 }
 
 .ora-info-awards-mid-section {
@@ -12671,6 +12701,9 @@ select:focus {
   margin: 0;
 }
 
+.ora-info-awards-right-section p {
+  margin-bottom: 1rem;
+}
 .ora-info-awards-right-section .award-logos ul {
   display: flex;
 }
@@ -12717,14 +12750,13 @@ select:focus {
   transition: ease-in-out 0.3s;
 }
 .ora-features-section-1-inner .content ul li small, .ora-features-section-1-inner .content ul li .small {
-  font-size: calc(0.5rem + 0.5vw);
+  font-size: calc(0.8rem + 0.2vw);
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 .ora-features-section-1-inner .content ul li p {
   color: #000000;
-  font-size: calc(0.4rem + 0.5vw);
 }
 .ora-features-section-1-inner .content:hover i {
   transform: scaleX(-1);
@@ -12793,10 +12825,6 @@ select:focus {
   padding: 0 2rem;
 }
 .packages-content .packages-title .packages-title-inner a {
-  color: #1a4f7b;
-  display: block;
-  font-size: calc(0.8rem + 0.2vw);
-  font-weight: 600;
   margin-bottom: 1rem;
 }
 .packages-content .packages-title .packages-title-inner a.location {
@@ -12862,7 +12890,6 @@ select:focus {
 }
 .why-us-section-wrapper .content-wrap ul li .content-box p {
   font-weight: 300;
-  font-size: calc(0.8rem + 0.2vw);
   color: #FFFFFF;
 }
 .why-us-section-wrapper .content-wrap ul li .content-box-feature {
@@ -12943,19 +12970,6 @@ select:focus {
 }
 .adventure-activities-col-wrapper .first-col figure figcaption .adventure-activities-content p {
   margin-bottom: 1rem;
-  font-size: calc(0.6rem + 0.2vw);
-}
-.adventure-activities-col-wrapper .first-col figure figcaption .adventure-activities-content a {
-  text-transform: uppercase;
-  color: #FFFFFF;
-  letter-spacing: 4px;
-  font-weight: 400;
-  font-size: calc(0.4rem + 0.5vw);
-  border: 2px solid #FFFFFF;
-}
-.adventure-activities-col-wrapper .first-col figure figcaption .adventure-activities-content a:hover {
-  color: #000000;
-  background-color: #FFFFFF;
 }
 .adventure-activities-col-wrapper .first-col::after {
   content: "";
@@ -13299,6 +13313,7 @@ select:focus {
 
 .talk-to-local-inner {
   display: flex;
+  align-items: center;
 }
 .talk-to-local-inner .left-section {
   width: 60%;
@@ -13315,11 +13330,13 @@ select:focus {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.talk-to-local-inner .left-section figure figcaption h4, .talk-to-local-inner .left-section figure figcaption .h4 {
+.talk-to-local-inner .left-section figure figcaption {
+  border-left: 4px solid #00d9ec;
+  padding: 2rem 3rem;
+  background-color: #FFFFFF;
   position: absolute;
-  top: 100%;
-  left: 100%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  right: 0;
 }
 .talk-to-local-inner .right-section {
   width: 40%;
@@ -13327,6 +13344,16 @@ select:focus {
 }
 .talk-to-local-inner .right-section .content {
   width: 100%;
+}
+.talk-to-local-inner .right-section .content h4, .talk-to-local-inner .right-section .content .h4 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+.talk-to-local-inner .right-section .content p {
+  margin-bottom: 2rem;
+}
+.talk-to-local-inner .right-section .content .strip-style {
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 992px) {
@@ -13401,6 +13428,17 @@ select:focus {
   }
   .adventure-activities-col-wrapper .row [class^=col-]:not(:last-child) {
     padding-bottom: 1rem;
+  }
+  .talk-to-local-inner {
+    flex-direction: column;
+  }
+  .talk-to-local-inner .left-section {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .talk-to-local-inner .right-section {
+    width: 100%;
+    padding-left: 0;
   }
 }
 @media (max-width: 567px) {

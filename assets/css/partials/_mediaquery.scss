@@ -115,6 +115,19 @@
     }
 
 
+    .talk-to-local-inner{
+        flex-direction: column;
+        .left-section{
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        .right-section{
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+
+
 
 
 
