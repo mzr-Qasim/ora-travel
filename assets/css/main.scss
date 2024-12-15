@@ -1287,11 +1287,30 @@
             }
             figcaption{
                 border-left: 4px solid $primary-color;
+                width: 50%;
                 padding: 2rem 3rem;
                 background-color: $white-color;
                 position: absolute;
                 bottom: 0;
                 right: 0; 
+                .video-buttton-content{
+                    display: flex;
+                    align-items: center;
+                    .video-button{
+                        a{
+                            margin-right: 1rem;
+                            i{
+                                font-size: calc(3rem + .5vw);
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                    .video-title{
+                        p{
+                            margin-bottom: $text-space-xs-small;
+                        }
+                    }
+                }
 
             }
         }

@@ -120,6 +120,12 @@
         .left-section{
             width: 100%;
             margin-bottom: 2rem;
+            figure{
+                figcaption{
+                    border-left: 3px solid $primary-color;
+                    padding:1rem ;
+                }
+            }
         }
         .right-section{
             width: 100%;
