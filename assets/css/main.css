@@ -12448,14 +12448,36 @@ select:focus {
   background-color: #FFFFFF;
 }
 .form .tabs button.packages-button {
+  overflow: hidden;
   color: #FFFFFF;
   background-color: #1a4f7b;
+  position: relative;
+}
+.form .tabs button.packages-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  z-index: 1;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+}
+.form .tabs button.packages-button:hover {
+  color: #1a4f7b !important;
+}
+.form .tabs button.packages-button:hover::after {
+  transform: translateY(0);
 }
 .form .tabs button i {
+  z-index: 2;
   padding-right: 1rem;
   font-size: calc(0.8rem + 0.2vw);
 }
 .form .tabs button span {
+  z-index: 2;
   text-transform: uppercase;
   font-weight: 600;
   font-size: calc(0.7rem + 0.2vw);
@@ -12884,7 +12906,7 @@ select:focus {
 .adventure-activities-col-wrapper .first-col figure {
   width: 100%;
   height: 100%;
-  aspect-ratio: 1/1.4;
+  aspect-ratio: 1/1.6;
 }
 .adventure-activities-col-wrapper .first-col figure img {
   position: absolute;
@@ -12930,6 +12952,10 @@ select:focus {
   font-weight: 400;
   font-size: calc(0.4rem + 0.5vw);
   border: 2px solid #FFFFFF;
+}
+.adventure-activities-col-wrapper .first-col figure figcaption .adventure-activities-content a:hover {
+  color: #000000;
+  background-color: #FFFFFF;
 }
 .adventure-activities-col-wrapper .first-col::after {
   content: "";
@@ -13000,6 +13026,11 @@ select:focus {
 .adventure-activities-col-wrapper .second-col .top-content figure:hover::after {
   transform: translateY(0);
 }
+.adventure-activities-col-wrapper .second-col .top-content figure:hover .activities-links-button {
+  background-color: transparent !important;
+  color: #FFFFFF !important;
+  transition: ease-in 0.4s;
+}
 .adventure-activities-col-wrapper .second-col .bottom-content {
   overflow: hidden;
   position: relative;
@@ -13053,6 +13084,11 @@ select:focus {
 }
 .adventure-activities-col-wrapper .second-col .bottom-content:hover::after {
   transform: translateY(0);
+}
+.adventure-activities-col-wrapper .second-col .bottom-content:hover .activities-links-button {
+  background-color: transparent !important;
+  color: #FFFFFF !important;
+  transition: ease-in 0.4s;
 }
 .adventure-activities-col-wrapper .third-col {
   height: 50%;
@@ -13112,6 +13148,11 @@ select:focus {
 .adventure-activities-col-wrapper .third-col .top-content figure:hover::after {
   transform: translateY(0);
 }
+.adventure-activities-col-wrapper .third-col .top-content figure:hover .activities-links-button {
+  background-color: transparent !important;
+  color: #FFFFFF !important;
+  transition: ease-in 0.4s;
+}
 .adventure-activities-col-wrapper .third-col .bottom-content {
   overflow: hidden;
   position: relative;
@@ -13165,6 +13206,11 @@ select:focus {
 }
 .adventure-activities-col-wrapper .third-col .bottom-content figure:hover::after {
   transform: translateY(0);
+}
+.adventure-activities-col-wrapper .third-col .bottom-content figure:hover .activities-links-button {
+  background-color: transparent !important;
+  color: #FFFFFF !important;
+  transition: ease-in 0.4s;
 }
 
 .follow-adventure-section {
@@ -13240,6 +13286,12 @@ select:focus {
 .follow-adventure-col-wrapper .follow-adventure-content:hover::after {
   transform: translateX(0);
 }
+.follow-adventure-col-wrapper .follow-adventure-content:hover h4, .follow-adventure-col-wrapper .follow-adventure-content:hover .h4 {
+  color: #FFFFFF;
+}
+.follow-adventure-col-wrapper .follow-adventure-content:hover small, .follow-adventure-col-wrapper .follow-adventure-content:hover .small {
+  color: #FFFFFF;
+}
 
 .talk-to-local-section {
   margin-bottom: 6rem;
@@ -13250,9 +13302,9 @@ select:focus {
 }
 .talk-to-local-inner .left-section {
   width: 60%;
-  position: relative;
 }
 .talk-to-local-inner .left-section figure {
+  position: relative;
   width: 100%;
   aspect-ratio: 1/0.7;
 }

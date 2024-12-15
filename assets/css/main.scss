@@ -181,17 +181,41 @@
         }
 
         button.packages-button {
+            overflow: hidden;
             color: $white-color;
             background-color: $secondary-color;
+            position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $white-color;
+                z-index: 1;
+                transform: translateY(-100%);
+                transition: transform .5s ease;
+                
+            }
+            &:hover{
+                color: $secondary-color!important;
+                &::after{
+                    transform: translateY(0);
+                }
+            }
         }
 
         button {
             i {
+                z-index: 2;
                 padding-right: 1rem;
                 font-size: calc(0.8rem + .2vw);
             }
 
             span {
+                z-index: 2;
                 text-transform: uppercase;
                 font-weight: 600;
                 font-size: calc(0.7rem + .2vw);
@@ -822,7 +846,7 @@
         figure{
             width: 100%;
             height: 100%;
-            aspect-ratio: 1/1.4;
+            aspect-ratio: 1/1.6;
             img{
                 position: absolute;
                 width: 100%;
@@ -864,6 +888,10 @@
                         font-weight: 400;
                         font-size: calc(0.4rem + .5vw);
                         border: 2px solid $white-color;
+                        &:hover{
+                            color: $black-color;
+                            background-color: $white-color;
+                        }
                     }
                 }
 
@@ -881,6 +909,7 @@
             z-index: -1;
 
         }
+
 
     }
 
@@ -942,6 +971,11 @@
                     &::after{
                         transform: translateY(0);
                     }
+                    .activities-links-button{
+                        background-color: transparent!important;
+                        color: $white-color!important;
+                        transition: ease-in .4s;
+                    }
                 }
             }
     
@@ -1001,6 +1035,11 @@
             &:hover{
                 &::after{
                     transform: translateY(0);
+                }
+                .activities-links-button{
+                    background-color: transparent!important;
+                    color: $white-color!important;
+                    transition: ease-in .4s;
                 }
             }
         }
@@ -1068,6 +1107,11 @@
                     &::after{
                         transform: translateY(0);
                     }
+                    .activities-links-button{
+                        background-color: transparent!important;
+                        color: $white-color!important;
+                        transition: ease-in .4s;
+                    }
                 }
             }
     
@@ -1126,6 +1170,11 @@
                 &:hover{
                     &::after{
                         transform: translateY(0);
+                    }
+                    .activities-links-button{
+                        background-color: transparent!important;
+                        color: $white-color!important;
+                        transition: ease-in .4s;
                     }
                 }
             }
@@ -1231,6 +1280,12 @@
             &::after{
                 transform: translateX(0);
             }
+            h4{
+                color: $white-color;
+            }
+            small{
+                color: $white-color;
+            }
 
         }
 
@@ -1249,8 +1304,8 @@
     display: flex;
     .left-section{
         width: 60%;
-        position: relative;
         figure{
+            position: relative;
             width: 100%;
             aspect-ratio: 1/.7;
             img{
@@ -1265,8 +1320,9 @@
                     position: absolute;
                     top: 100%;
                     left: 100%;
-                    transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);       
                 }
+
             }
         }
     }
