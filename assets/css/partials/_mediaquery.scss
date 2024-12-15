@@ -118,12 +118,17 @@
     .talk-to-local-inner{
         flex-direction: column;
         .left-section{
-            width: 100%;
             margin-bottom: 2rem;
+            width: 100%;
             figure{
+                img{
+                    position: static;
+                }
                 figcaption{
+                    position: static;
+                    width: 100%;
                     border-left: 3px solid $primary-color;
-                    padding:1rem ;
+                    padding: 1rem ;
                 }
             }
         }

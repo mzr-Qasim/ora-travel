@@ -13448,10 +13448,15 @@ select:focus {
     flex-direction: column;
   }
   .talk-to-local-inner .left-section {
-    width: 100%;
     margin-bottom: 2rem;
+    width: 100%;
+  }
+  .talk-to-local-inner .left-section figure img {
+    position: static;
   }
   .talk-to-local-inner .left-section figure figcaption {
+    position: static;
+    width: 100%;
     border-left: 3px solid #00d9ec;
     padding: 1rem;
   }
