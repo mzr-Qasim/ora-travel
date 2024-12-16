@@ -186,7 +186,7 @@
             background-color: $secondary-color;
             position: relative;
 
-            &::after{
+            &::after {
                 content: '';
                 position: absolute;
                 top: 0;
@@ -197,11 +197,13 @@
                 z-index: 1;
                 transform: translateY(-100%);
                 transition: transform .5s ease;
-                
+
             }
-            &:hover{
-                color: $secondary-color!important;
-                &::after{
+
+            &:hover {
+                color: $secondary-color !important;
+
+                &::after {
                     transform: translateY(0);
                 }
             }
@@ -468,9 +470,10 @@
 
 
 .ora-info-awards-right-section {
-    p{
+    p {
         margin-bottom: $text-space-small;
     }
+
     .award-logos {
         ul {
             display: flex;
@@ -770,25 +773,26 @@
 // Adventure Activities Section
 
 
-.adventure-activities{
+.adventure-activities {
     margin-bottom: $section-space-large;
 }
 
 
 
-.adventure-activites-title{
+.adventure-activites-title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    h4{
-        font-size: calc(1.3rem + .2vw);  
-        margin-bottom: 1rem;  
+
+    h4 {
+        font-size: calc(1.3rem + .2vw);
+        margin-bottom: 1rem;
         letter-spacing: 4px;
         font-weight: 600;
         color: $secondary-color;
         position: relative;
 
-        
+
         // &::before {
         //     text-align: center;
         //     content: "";
@@ -813,7 +817,8 @@
 
         // }
     }
-    p{
+
+    p {
         margin-bottom: $text-space-large;
     }
 }
@@ -821,53 +826,61 @@
 
 
 
-.adventure-activities-col-wrapper{
-    .first-col{
+.adventure-activities-col-wrapper {
+    .first-col {
         height: 100%;
         width: 100%;
         position: relative;
-        figure{
+
+        figure {
             width: 100%;
             height: 100%;
             aspect-ratio: 1/1.6;
-            img{
+
+            img {
                 position: absolute;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 z-index: -2;
             }
-            figcaption{
+
+            figcaption {
                 width: 100%;
                 height: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 padding: 0 2rem;
-                .adventure-activities-content{
+
+                .adventure-activities-content {
                     color: $white-color;
                     text-align: center;
-                    h4{
+
+                    h4 {
                         text-transform: uppercase;
-                        font-size: calc(1.3rem + .2vw); 
-                        letter-spacing: 4px;    
-                        margin-bottom: 1rem;   
-                        line-height: 2rem; 
+                        font-size: calc(1.3rem + .2vw);
+                        letter-spacing: 4px;
+                        margin-bottom: 1rem;
+                        line-height: 2rem;
                         text-wrap: pretty;
                         font-weight: 600;
                     }
-                    h4.start-from-text{
+
+                    h4.start-from-text {
                         font-weight: 400;
-                        font-size: calc(1rem + .2vw); 
+                        font-size: calc(1rem + .2vw);
                     }
-                    p{
+
+                    p {
                         margin-bottom: 1rem;
                     }
                 }
 
             }
         }
-        &::after{
+
+        &::after {
             content: '';
             position: absolute;
             top: 0;
@@ -883,48 +896,55 @@
 
     }
 
-.second-col{
+    .second-col {
         height: 50%;
         width: 100%;
-        .top-content{
+
+        .top-content {
             overflow: hidden;
             width: 100%;
             height: 100%;
             position: relative;
-            figure{
+
+            figure {
                 width: 100%;
                 height: 100%;
                 aspect-ratio: 1/.5;
-                img{
+
+                img {
                     position: absolute;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     z-index: -1;
                 }
-                figcaption{
+
+                figcaption {
                     z-index: 2;
                     position: absolute;
                     width: 100%;
                     top: 90%;
-                    left: 0;  
-                    padding-left: 2rem;  
+                    left: 0;
+                    padding-left: 2rem;
                     transform: translate(0, -50%);
-                    .activities-link{
-                        .activities-links-button{
+
+                    .activities-link {
+                        .activities-links-button {
                             display: inline-block;
                             background-color: $white-color;
                             color: $secondary-color;
                             padding: 0.5rem;
                             font-weight: 600;
-                            span{
+
+                            span {
                                 font-weight: 400;
                             }
-    
+
                         }
-                    } 
+                    }
                 }
-                &::after{
+
+                &::after {
                     content: '';
                     position: absolute;
                     top: 0;
@@ -937,59 +957,68 @@
                     transition: transform 0.5s ease;
                     z-index: 1;
                 }
-                &:hover{
-                    &::after{
+
+                &:hover {
+                    &::after {
                         transform: translateY(0);
                     }
-                    .activities-links-button{
-                        background-color: transparent!important;
-                        color: $white-color!important;
+
+                    .activities-links-button {
+                        background-color: transparent !important;
+                        color: $white-color !important;
                         transition: ease-in .4s;
                     }
                 }
             }
-    
+
         }
-        .bottom-content{
+
+        .bottom-content {
             overflow: hidden;
             position: relative;
             width: 100%;
             height: 100%;
-            figure{
+
+            figure {
                 width: 100%;
                 height: 100%;
                 aspect-ratio: 1/.5;
-                img{
+
+                img {
                     position: absolute;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     z-index: -1;
                 }
-                figcaption{
+
+                figcaption {
                     position: absolute;
                     z-index: 2;
                     width: 100%;
                     top: 90%;
-                    left: 0; 
-                    padding-left: 2rem;  
+                    left: 0;
+                    padding-left: 2rem;
                     transform: translate(0, -50%);
-                    .activities-link{
-                        .activities-links-button{
+
+                    .activities-link {
+                        .activities-links-button {
                             display: inline-block;
                             background-color: $white-color;
                             color: $secondary-color;
                             padding: 0.5rem;
                             font-weight: 600;
-                            span{
+
+                            span {
                                 font-weight: 400;
                             }
-    
+
                         }
-                    } 
+                    }
                 }
             }
-            &::after{
+
+            &::after {
                 content: '';
                 position: absolute;
                 top: 0;
@@ -1002,13 +1031,15 @@
                 transition: transform 0.5s ease;
                 z-index: 1;
             }
-            &:hover{
-                &::after{
+
+            &:hover {
+                &::after {
                     transform: translateY(0);
                 }
-                .activities-links-button{
-                    background-color: transparent!important;
-                    color: $white-color!important;
+
+                .activities-links-button {
+                    background-color: transparent !important;
+                    color: $white-color !important;
                     transition: ease-in .4s;
                 }
             }
@@ -1019,48 +1050,55 @@
 
 
 
-    .third-col{
+    .third-col {
         height: 50%;
         width: 100%;
-        .top-content{
+
+        .top-content {
             overflow: hidden;
             width: 100%;
             height: 100%;
             position: relative;
-            figure{
+
+            figure {
                 width: 100%;
                 height: 100%;
                 aspect-ratio: 1/.5;
-                img{
+
+                img {
                     position: absolute;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     z-index: -1;
                 }
-                figcaption{
+
+                figcaption {
                     z-index: 2;
                     position: absolute;
                     width: 100%;
                     top: 90%;
-                    left: 0;  
-                    padding-left: 2rem;  
+                    left: 0;
+                    padding-left: 2rem;
                     transform: translate(0, -50%);
-                    .activities-link{
-                        .activities-links-button{
+
+                    .activities-link {
+                        .activities-links-button {
                             display: inline-block;
                             background-color: $white-color;
                             color: $secondary-color;
                             padding: 0.5rem;
                             font-weight: 600;
-                            span{
+
+                            span {
                                 font-weight: 400;
                             }
-    
+
                         }
-                    } 
+                    }
                 }
-                &::after{
+
+                &::after {
                     content: '';
                     position: absolute;
                     top: 0;
@@ -1073,58 +1111,67 @@
                     transition: transform 0.5s ease;
                     z-index: 1;
                 }
-                &:hover{
-                    &::after{
+
+                &:hover {
+                    &::after {
                         transform: translateY(0);
                     }
-                    .activities-links-button{
-                        background-color: transparent!important;
-                        color: $white-color!important;
+
+                    .activities-links-button {
+                        background-color: transparent !important;
+                        color: $white-color !important;
                         transition: ease-in .4s;
                     }
                 }
             }
-    
+
         }
-        .bottom-content{
+
+        .bottom-content {
             overflow: hidden;
             position: relative;
             width: 100%;
             height: 100%;
-            figure{
+
+            figure {
                 width: 100%;
                 height: 100%;
                 aspect-ratio: 1/.5;
-                img{
+
+                img {
                     position: absolute;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                     z-index: -1;
                 }
-                figcaption{
+
+                figcaption {
                     z-index: 2;
                     position: absolute;
                     width: 100%;
                     top: 90%;
-                    left: 0; 
-                    padding-left: 2rem;  
+                    left: 0;
+                    padding-left: 2rem;
                     transform: translate(0, -50%);
-                    .activities-link{
-                        .activities-links-button{
+
+                    .activities-link {
+                        .activities-links-button {
                             display: inline-block;
                             background-color: $white-color;
                             color: $secondary-color;
                             padding: 0.5rem;
                             font-weight: 600;
-                            span{
+
+                            span {
                                 font-weight: 400;
                             }
-    
+
                         }
-                    } 
+                    }
                 }
-                &::after{
+
+                &::after {
                     content: '';
                     position: absolute;
                     top: 0;
@@ -1137,22 +1184,24 @@
                     transition: transform 0.5s ease;
                     z-index: 1;
                 }
-                &:hover{
-                    &::after{
+
+                &:hover {
+                    &::after {
                         transform: translateY(0);
                     }
-                    .activities-links-button{
-                        background-color: transparent!important;
-                        color: $white-color!important;
+
+                    .activities-links-button {
+                        background-color: transparent !important;
+                        color: $white-color !important;
                         transition: ease-in .4s;
                     }
                 }
             }
         }
-        
+
     }
 
-    
+
 }
 
 
@@ -1188,10 +1237,11 @@
     .follow-adventure-title {
         color: $white-color;
         text-align: center;
-        h4{
-            font-size: calc(1.3rem + .2vw); 
-            letter-spacing: 4px;    
-            margin-bottom: 1rem;     
+
+        h4 {
+            font-size: calc(1.3rem + .2vw);
+            letter-spacing: 4px;
+            margin-bottom: 1rem;
 
         }
     }
@@ -1233,7 +1283,7 @@
             }
         }
 
-        &::after{
+        &::after {
             content: '';
             position: absolute;
             transform: translateX(-100%);
@@ -1246,14 +1296,17 @@
             left: 0;
 
         }
-        &:hover{
-            &::after{
+
+        &:hover {
+            &::after {
                 transform: translateX(0);
             }
-            h4{
+
+            h4 {
                 color: $white-color;
             }
-            small{
+
+            small {
                 color: $white-color;
             }
 
@@ -1265,48 +1318,56 @@
 }
 
 
-.talk-to-local-section{
+.talk-to-local-section {
     margin-bottom: $section-space-large;
 }
 
 
-.talk-to-local-inner{
+.talk-to-local-inner {
     display: flex;
     align-items: center;
-    .left-section{
+
+    .left-section {
         width: 60%;
-        figure{
+
+        figure {
             position: relative;
             width: 100%;
             aspect-ratio: 1/.7;
-            img{
+
+            img {
                 position: absolute;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
-            figcaption{
+
+            figcaption {
                 border-left: 4px solid $primary-color;
                 width: 50%;
                 padding: 2rem 3rem;
                 background-color: $white-color;
                 position: absolute;
                 bottom: 0;
-                right: 0; 
-                .video-buttton-content{
+                right: 0;
+
+                .video-buttton-content {
                     display: flex;
                     align-items: center;
-                    .video-button{
-                        a{
+
+                    .video-button {
+                        a {
                             margin-right: 1rem;
-                            i{
+
+                            i {
                                 font-size: calc(3rem + .5vw);
                                 color: $primary-color;
                             }
                         }
                     }
-                    .video-title{
-                        p{
+
+                    .video-title {
+                        p {
                             margin-bottom: $text-space-xs-small;
                         }
                     }
@@ -1315,20 +1376,25 @@
             }
         }
     }
-    .right-section{
+
+    .right-section {
         width: 40%;
         padding-left: 5rem;
-        .content{
+
+        .content {
             width: 100%;
-            h4{
+
+            h4 {
                 margin-bottom: 2rem;
                 font-weight: 600;
 
             }
-            p{
+
+            p {
                 margin-bottom: 2rem;
             }
-            .strip-style{
+
+            .strip-style {
                 margin-bottom: 2rem;
             }
 
@@ -1338,18 +1404,19 @@
 
 
 
-// .counter-animation-section{
+.counter-animation-section {
+    margin-bottom: $section-space-large;
+}
 
-// }
-
-.counter-animation-inner{
+.counter-animation-inner {
 
     position: relative;
-    min-height: 40vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    img{
+
+    img {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -1357,18 +1424,65 @@
         z-index: -2;
     }
 
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $secondary-color;
+        opacity: 0.9;
+        z-index: -1;
 
-    .counter-box{
+    }
+
+
+    .counter-box {
         text-align: center;
         color: $white-color;
-        i{
+
+        i {
             display: inline-block;
             font-size: 4rem;
             margin-bottom: 1rem;
         }
-        h4{
+
+        h4 {
             margin-bottom: 1rem;
+            position: relative;
+
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 2rem;
+                height: 1px;
+                background-color: $white-color;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                visibility: hidden; 
+                transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; 
+
+
+            }
         }
+
+        &:hover {
+            h4{
+                &::after {
+                    opacity: 1; 
+                    visibility: visible; 
+                    transition: opacity 0.5s ease-in-out, visibility 0s 0s; 
+                }
+            }
+
+
+        }
+
+
     }
 
 }
