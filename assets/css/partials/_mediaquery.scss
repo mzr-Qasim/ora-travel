@@ -139,7 +139,13 @@
         }
     }
 
-
+    // counter-animation-section
+    .counter-animation-inner{
+        min-height: 80vh;
+        .row [class^="col-"] {
+            padding: 1rem 0;
+        }
+    }
 
 
 

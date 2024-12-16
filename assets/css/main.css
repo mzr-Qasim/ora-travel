@@ -13377,7 +13377,7 @@ select:focus {
 
 .counter-animation-inner {
   position: relative;
-  min-height: 100vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13525,6 +13525,12 @@ select:focus {
   .talk-to-local-inner .right-section {
     width: 100%;
     padding-left: 0;
+  }
+  .counter-animation-inner {
+    min-height: 80vh;
+  }
+  .counter-animation-inner .row [class^=col-] {
+    padding: 1rem 0;
   }
 }
 @media (max-width: 567px) {
