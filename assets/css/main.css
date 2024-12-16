@@ -12164,6 +12164,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.partial-container-right {
+  max-width: calc((1320px) + 50% - (1320px) / 2);
+  padding-left: 1rem;
+  margin-left: auto;
+}
+
 body {
   overflow: hidden;
   overflow-y: auto;

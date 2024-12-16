@@ -97,7 +97,6 @@ $(window).on('scroll', function() {
     var windowTop = $(window).scrollTop();
     var windowBottom = windowTop + $(window).height();
 
-
     if (elementBottom >= windowTop && elementTop <= windowBottom) {
       if (!$this.hasClass('animated')) {
         $this.addClass('animated');
@@ -108,11 +107,20 @@ $(window).on('scroll', function() {
           duration: 2000,
           easing: 'linear',
           step: function() {
-            $this.text(Math.floor(this.countNum));
+            // Add '+' only if the counter has the 'plus-sign' class
+            if ($this.hasClass('plus-sign')) {
+              $this.text(Math.floor(this.countNum) + "+");
+            } else {
+              $this.text(Math.floor(this.countNum));
+            }
           },
           complete: function() {
-            $this.text(this.countNum);
-            //alert('finished');
+            // Final value with or without '+'
+            if ($this.hasClass('plus-sign')) {
+              $this.text(this.countNum + " +");
+            } else {
+              $this.text(this.countNum);
+            }
           }
         });
       }

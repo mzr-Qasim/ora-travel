@@ -21,6 +21,18 @@ $text-space-small: 1rem;
 $text-space-large: 2rem;
 
 
+$container-width: 1320px;
+
+.partial-container-right{
+    max-width: calc((#{$container-width}) + (50% - (#{$container-width}) / 2));
+    padding-left: 1rem;
+    margin-left: auto;
+}
+
+
+
+
+
 // *{
 //     outline: 1px solid red;
 // }
