@@ -1338,6 +1338,42 @@
 
 
 
+// .counter-animation-section{
+
+// }
+
+.counter-animation-inner{
+
+    position: relative;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -2;
+    }
+
+
+    .counter-box{
+        text-align: center;
+        color: $white-color;
+        i{
+            display: inline-block;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        h4{
+            margin-bottom: 1rem;
+        }
+    }
+
+}
+
+
 
 
 

@@ -86,7 +86,39 @@ var swiper = new Swiper(".mySwiper3", {
 });
 
 
+$(window).on('scroll', function() {
+  $('.counter').each(function() {
+    var $this = $(this),
+        countTo = $this.attr('data-count');
+    
+    // Check if the element is in the viewport
+    var elementTop = $this.offset().top;
+    var elementBottom = elementTop + $this.outerHeight();
+    var windowTop = $(window).scrollTop();
+    var windowBottom = windowTop + $(window).height();
 
+
+    if (elementBottom >= windowTop && elementTop <= windowBottom) {
+      if (!$this.hasClass('animated')) {
+        $this.addClass('animated');
+        
+        $({ countNum: $this.text() }).animate({
+          countNum: countTo
+        }, {
+          duration: 2000,
+          easing: 'linear',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+        });
+      }
+    }
+  });
+});
 
 
 
