@@ -13544,4 +13544,16 @@ select:focus {
   .packages-nav-prev {
     display: none;
   }
+  .adventure-activities-col-wrapper .second-col .top-content figure figcaption {
+    top: 50%;
+  }
+  .adventure-activities-col-wrapper .second-col .bottom-content figure figcaption {
+    top: 50%;
+  }
+  .adventure-activities-col-wrapper .third-col .top-content figure figcaption {
+    top: 50%;
+  }
+  .adventure-activities-col-wrapper .third-col .bottom-content figure figcaption {
+    top: 50%;
+  }
 }/*# sourceMappingURL=main.css.map */

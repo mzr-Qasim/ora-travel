@@ -104,7 +104,7 @@
         }
     }
 
-
+    // adventure activities section
     .adventure-activities-col-wrapper{
         .row [class^="col-"] {
             &:not(:last-child){
@@ -113,6 +113,11 @@
 
         }      
     }
+
+   
+
+
+
 
 
     .talk-to-local-inner{
@@ -182,4 +187,41 @@
     .packages-nav-prev{
         display: none;
     }
+
+    // adventure activities section
+    .adventure-activities-col-wrapper {
+        .second-col {
+            .top-content {
+                figure {
+                    figcaption {
+                        top: 50%;
+                    }
+                }
+            }
+            .bottom-content {
+                figure {
+                    figcaption {
+                        top: 50%;
+                    }
+                }
+            }
+        }
+        .third-col{
+            .top-content {
+                figure {
+                    figcaption {
+                        top: 50%;
+                    }
+                }
+            }             
+            .bottom-content {
+                figure {
+                    figcaption {
+                        top: 50%;
+                    }
+                }
+            }             
+        }
+    }
+
 }
