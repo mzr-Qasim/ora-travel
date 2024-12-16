@@ -12251,11 +12251,11 @@ select:focus {
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: ease-in-out 0.3s;
-  border: 2px solid #1a4f7b;
-  color: #1a4f7b;
+  border: 2px solid #003b6c;
+  color: #003b6c;
 }
 .theme-links-button-secondary-border:hover {
-  background-color: #1a4f7b;
+  background-color: #003b6c;
   color: #FFFFFF;
 }
 
@@ -12275,7 +12275,7 @@ select:focus {
 }
 
 .link-hover {
-  color: #1a4f7b;
+  color: #003b6c;
   display: block;
   font-size: calc(0.8rem + 0.2vw);
   font-weight: 600;
@@ -12299,7 +12299,7 @@ select:focus {
 }
 
 .ora-info-awards-section-title {
-  color: #1a4f7b;
+  color: #003b6c;
   font-size: calc(1rem + 0.2vw);
   margin-bottom: 1rem;
 }
@@ -12392,7 +12392,7 @@ select:focus {
 }
 
 .main-navbar {
-  background-color: #1a4f7b;
+  background-color: #003b6c;
 }
 .main-navbar .navbar-brand img {
   width: 70px;
@@ -12491,13 +12491,13 @@ select:focus {
   z-index: 10;
 }
 .form .tabs button.hotels-button {
-  color: #1a4f7b;
+  color: #003b6c;
   background-color: #FFFFFF;
 }
 .form .tabs button.packages-button {
   overflow: hidden;
   color: #FFFFFF;
-  background-color: #1a4f7b;
+  background-color: #003b6c;
   position: relative;
 }
 .form .tabs button.packages-button::after {
@@ -12513,7 +12513,7 @@ select:focus {
   transition: transform 0.5s ease;
 }
 .form .tabs button.packages-button:hover {
-  color: #1a4f7b !important;
+  color: #003b6c !important;
 }
 .form .tabs button.packages-button:hover::after {
   transform: translateY(0);
@@ -12537,7 +12537,7 @@ select:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(26, 79, 123, 0.7);
+  background-color: rgba(0, 59, 108, 0.7);
   z-index: 1;
 }
 
@@ -12561,7 +12561,7 @@ select:focus {
   transform: translate(-50%, -50%);
 }
 .search-fields ul li button.theme-input-hero-section i {
-  color: #1a4f7b;
+  color: #003b6c;
   font-weight: bold;
   transition: ease-in-out 0.3s;
 }
@@ -12583,7 +12583,7 @@ select:focus {
 .locations-section .title-locations h4, .locations-section .title-locations .h4 {
   font-size: calc(1.3rem + 0.2vw);
   font-weight: 600;
-  color: #1a4f7b;
+  color: #003b6c;
   letter-spacing: 2px;
 }
 .locations-section .title-locations h4:not(:last-child), .locations-section .title-locations .h4:not(:last-child) {
@@ -12617,7 +12617,7 @@ select:focus {
   align-items: center;
   position: absolute;
   background-color: #FFFFFF;
-  color: #1a4f7b;
+  color: #003b6c;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: calc(0.2rem + 0.5vw);
@@ -12634,7 +12634,7 @@ select:focus {
   font-size: 1rem;
 }
 .mySwiper2 .swiper-slide .shutter .destinations-link:hover {
-  background-color: #1a4f7b;
+  background-color: #003b6c;
   color: #FFFFFF;
 }
 .mySwiper2 .swiper-slide figure {
@@ -12672,7 +12672,7 @@ select:focus {
   align-items: center;
 }
 .ora-info-awards-mid-section .moving-image figure {
-  width: 300px;
+  width: 400px;
   aspect-ratio: 1/1;
 }
 .ora-info-awards-mid-section .moving-image figure img {
@@ -12738,9 +12738,9 @@ select:focus {
 }
 
 .ora-features-section-1-inner .content {
-  color: #1a4f7b;
-  padding: 4rem 3rem;
-  border-left: 1px solid #00d9ec;
+  color: #003b6c;
+  padding: 6rem 3rem;
+  border-left: 1px solid rgba(0, 217, 236, 0.4);
   height: 100%;
 }
 .ora-features-section-1-inner .content ul {
@@ -12792,7 +12792,7 @@ select:focus {
   text-transform: uppercase;
   font-size: calc(1.3rem + 0.2vw);
   font-weight: 600;
-  color: #1a4f7b;
+  color: #003b6c;
   letter-spacing: 2px;
 }
 .popular-packages-title-and-buttons h4::after, .popular-packages-title-and-buttons .h4::after {
@@ -12822,7 +12822,7 @@ select:focus {
   border-top: 0;
 }
 .packages-content .packages-title {
-  color: #1a4f7b;
+  color: #003b6c;
   width: 60%;
   padding: 2rem 0;
 }
@@ -12834,7 +12834,7 @@ select:focus {
   margin-bottom: 1rem;
 }
 .packages-content .packages-title .packages-title-inner a.location {
-  color: #1a4f7b;
+  color: #003b6c;
   display: inline-block;
   font-size: calc(0.6rem + 0.2vw);
   font-weight: 400;
@@ -12886,7 +12886,7 @@ select:focus {
 .why-us-section-wrapper .content-wrap ul li .content-box h4, .why-us-section-wrapper .content-wrap ul li .content-box .h4 {
   font-size: calc(1rem + 0.2vw);
   margin-bottom: 1.5rem;
-  color: #1a4f7b;
+  color: #003b6c;
   font-weight: 600;
 }
 .why-us-section-wrapper .content-wrap ul li .content-box h4.main-title, .why-us-section-wrapper .content-wrap ul li .content-box .main-title.h4 {
@@ -12907,7 +12907,7 @@ select:focus {
 }
 .why-us-section-wrapper .content-wrap ul li .content-box-feature .content-box-icon i {
   font-size: calc(3rem + 0.2vw);
-  color: #1a4f7b;
+  color: #003b6c;
 }
 
 .adventure-activities {
@@ -12924,7 +12924,7 @@ select:focus {
   margin-bottom: 1rem;
   letter-spacing: 4px;
   font-weight: 600;
-  color: #1a4f7b;
+  color: #003b6c;
   position: relative;
 }
 .adventure-activites-title p {
@@ -12984,7 +12984,7 @@ select:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #1a4f7b;
+  background-color: #003b6c;
   opacity: 0.8;
   z-index: -1;
 }
@@ -13014,16 +13014,14 @@ select:focus {
 .adventure-activities-col-wrapper .second-col .top-content figure figcaption {
   z-index: 2;
   position: absolute;
-  width: 100%;
-  top: 90%;
+  bottom: 5%;
   left: 0;
   padding-left: 2rem;
-  transform: translate(0, -50%);
 }
 .adventure-activities-col-wrapper .second-col .top-content figure figcaption .activities-link .activities-links-button {
   display: inline-block;
   background-color: #FFFFFF;
-  color: #1a4f7b;
+  color: #003b6c;
   padding: 0.5rem;
   font-weight: 600;
 }
@@ -13074,15 +13072,14 @@ select:focus {
   position: absolute;
   z-index: 2;
   width: 100%;
-  top: 90%;
+  bottom: 5%;
   left: 0;
   padding-left: 2rem;
-  transform: translate(0, -50%);
 }
 .adventure-activities-col-wrapper .second-col .bottom-content figure figcaption .activities-link .activities-links-button {
   display: inline-block;
   background-color: #FFFFFF;
-  color: #1a4f7b;
+  color: #003b6c;
   padding: 0.5rem;
   font-weight: 600;
 }
@@ -13137,15 +13134,14 @@ select:focus {
   z-index: 2;
   position: absolute;
   width: 100%;
-  top: 90%;
+  bottom: 5%;
   left: 0;
   padding-left: 2rem;
-  transform: translate(0, -50%);
 }
 .adventure-activities-col-wrapper .third-col .top-content figure figcaption .activities-link .activities-links-button {
   display: inline-block;
   background-color: #FFFFFF;
-  color: #1a4f7b;
+  color: #003b6c;
   padding: 0.5rem;
   font-weight: 600;
 }
@@ -13196,15 +13192,14 @@ select:focus {
   z-index: 2;
   position: absolute;
   width: 100%;
-  top: 90%;
+  bottom: 5%;
   left: 0;
   padding-left: 2rem;
-  transform: translate(0, -50%);
 }
 .adventure-activities-col-wrapper .third-col .bottom-content figure figcaption .activities-link .activities-links-button {
   display: inline-block;
   background-color: #FFFFFF;
-  color: #1a4f7b;
+  color: #003b6c;
   padding: 0.5rem;
   font-weight: 600;
 }
@@ -13282,13 +13277,13 @@ select:focus {
 .follow-adventure-col-wrapper .follow-adventure-content .icon i {
   font-size: calc(2.5rem + 0.2vw);
   margin-right: 2rem;
-  color: #1a4f7b;
+  color: #003b6c;
 }
 .follow-adventure-col-wrapper .follow-adventure-content .info h4, .follow-adventure-col-wrapper .follow-adventure-content .info .h4 {
   letter-spacing: 2px;
   font-size: calc(1rem + 0.2vw);
   text-transform: uppercase;
-  color: #1a4f7b;
+  color: #003b6c;
   font-weight: 600;
 }
 .follow-adventure-col-wrapper .follow-adventure-content::after {
@@ -13311,6 +13306,57 @@ select:focus {
 }
 .follow-adventure-col-wrapper .follow-adventure-content:hover small, .follow-adventure-col-wrapper .follow-adventure-content:hover .small {
   color: #FFFFFF;
+}
+
+.around-the-world-section {
+  margin-bottom: 6rem;
+}
+
+.around-the-world-section .around-the-world-section-inner {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.around-the-world-section .around-the-world-section-inner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.around-the-world-section .around-the-world-section-inner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.content-lists .content-list-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 0.75rem 0;
+}
+.content-lists .content-list-item .content-list-item-link {
+  flex: 3;
+}
+.content-lists .content-list-item .content-list-item-rating {
+  flex: 1;
+}
+.content-lists .content-list-item .content-list-item-rating small, .content-lists .content-list-item .content-list-item-rating .small {
+  color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+.content-lists .content-list-item:hover .content-list-item-rating small, .content-lists .content-list-item:hover .content-list-item-rating .small {
+  color: #00d9ec;
 }
 
 .talk-to-local-section {
@@ -13403,7 +13449,7 @@ select:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #1a4f7b;
+  background-color: #003b6c;
   opacity: 0.9;
   z-index: -1;
 }
@@ -13413,7 +13459,7 @@ select:focus {
 }
 .counter-animation-inner .counter-box i {
   display: inline-block;
-  font-size: 4rem;
+  font-size: calc(4rem + 0.2vw);
   margin-bottom: 1rem;
 }
 .counter-animation-inner .counter-box h4, .counter-animation-inner .counter-box .h4 {
@@ -13439,6 +13485,11 @@ select:focus {
   transition: opacity 0.5s ease-in-out, visibility 0s 0s;
 }
 
+@media (max-width: 1199px) {
+  .contact-info {
+    display: none;
+  }
+}
 @media (max-width: 992px) {
   .info-bar-inner {
     flex-direction: column;
@@ -13454,6 +13505,9 @@ select:focus {
   }
   .main-navbar .navbar-nav .nav-link {
     padding: 1.5rem 0 !important;
+  }
+  .main-navbar .contact-info {
+    display: flex;
   }
   .title {
     top: 20%;
@@ -13549,17 +13603,5 @@ select:focus {
   }
   .packages-nav-prev {
     display: none;
-  }
-  .adventure-activities-col-wrapper .second-col .top-content figure figcaption {
-    top: 50%;
-  }
-  .adventure-activities-col-wrapper .second-col .bottom-content figure figcaption {
-    top: 50%;
-  }
-  .adventure-activities-col-wrapper .third-col .top-content figure figcaption {
-    top: 50%;
-  }
-  .adventure-activities-col-wrapper .third-col .bottom-content figure figcaption {
-    top: 50%;
   }
 }/*# sourceMappingURL=main.css.map */

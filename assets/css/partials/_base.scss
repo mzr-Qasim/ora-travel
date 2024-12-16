@@ -3,11 +3,14 @@ $info-bar-background-color: #131313;
 $black-color: #000000;
 $white-color: #FFFFFF;
 $primary-color: #00d9ec;
-$secondary-color: #1a4f7b;
+// $secondary-color: #1a4f7b;
+$secondary-color: #003b6c;
+
 $secondary-text-color: #bfbfbf;
 $pseudo-element-decoration-color: #ffd838;
 $bootstrap-default-text-color:   light-dark(rgb(118, 118, 118), rgb(133, 133, 133)) ;
 $light-border: rgba($secondary-text-color, 0.5);  
+$light-border-primary: rgba($primary-color, 0.4);
 $gold-color: #FFD700;
 
 // margin & space

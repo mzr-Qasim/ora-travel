@@ -423,7 +423,7 @@
 
     .moving-image {
         figure {
-            width: 300px;
+            width: 400px;
             aspect-ratio: 1/1;
 
             img {
@@ -512,8 +512,8 @@
 .ora-features-section-1-inner {
     .content {
         color: $secondary-color;
-        padding: 4rem 3rem;
-        border-left: 1px solid $primary-color;
+        padding: 6rem 3rem;
+        border-left: 1px solid $light-border-primary;
         height: 100%;
 
         ul {
@@ -922,11 +922,9 @@
                 figcaption {
                     z-index: 2;
                     position: absolute;
-                    width: 100%;
-                    top: 90%;
+                    bottom: 5%;
                     left: 0;
                     padding-left: 2rem;
-                    transform: translate(0, -50%);
 
                     .activities-link {
                         .activities-links-button {
@@ -996,10 +994,9 @@
                     position: absolute;
                     z-index: 2;
                     width: 100%;
-                    top: 90%;
+                    bottom: 5%;
                     left: 0;
                     padding-left: 2rem;
-                    transform: translate(0, -50%);
 
                     .activities-link {
                         .activities-links-button {
@@ -1077,10 +1074,9 @@
                     z-index: 2;
                     position: absolute;
                     width: 100%;
-                    top: 90%;
+                    bottom: 5%;
                     left: 0;
                     padding-left: 2rem;
-                    transform: translate(0, -50%);
 
                     .activities-link {
                         .activities-links-button {
@@ -1150,10 +1146,9 @@
                     z-index: 2;
                     position: absolute;
                     width: 100%;
-                    top: 90%;
+                    bottom: 5%;
                     left: 0;
                     padding-left: 2rem;
-                    transform: translate(0, -50%);
 
                     .activities-link {
                         .activities-links-button {
@@ -1317,7 +1312,91 @@
 
 }
 
+// around-the-world-section
 
+.around-the-world-section{
+    margin-bottom: $section-space-large;
+}
+
+
+.around-the-world-section{
+    .around-the-world-section-inner{
+        position: relative;
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            object-fit: cover;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $white-color;
+            opacity: 0.4;
+            z-index: -1;
+        }
+    }
+}
+
+.content-lists{
+    .content-list-item{
+        height: 100%;
+        display: flex; 
+        align-items: center;
+        position: relative;
+        margin: 0.75rem 0;
+        .content-list-item-link{
+            flex: 3;
+
+        }
+        // .content-list-item-strip{
+        //     margin: 0 1rem;
+        //     flex: 1;
+        //     height: 2px;
+        //     background-color: $primary-color;
+        //     opacity: 0;
+        //     visibility: hidden; 
+        //     transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; 
+        // }
+        .content-list-item-rating{
+            flex: 1;
+            small{
+                color: $bootstrap-default-text-color;
+            }
+        }
+        &:hover{
+            // .content-list-item-strip{
+            //     opacity: 1; 
+            //     visibility: visible; 
+            //     transition: opacity 0.5s ease-in-out, visibility 0s 0s; 
+            // }
+            .content-list-item-rating{
+                small{
+                    color: $primary-color;
+                }
+
+            }   
+
+        }
+    }
+}
+
+
+
+
+
+
+
+// talk to local section
 .talk-to-local-section {
     margin-bottom: $section-space-large;
 }
@@ -1403,7 +1482,7 @@
 }
 
 
-
+// counter animation section
 .counter-animation-section {
     margin-bottom: $section-space-large;
 }
@@ -1444,7 +1523,7 @@
 
         i {
             display: inline-block;
-            font-size: 4rem;
+            font-size: calc(4rem + .2vw);
             margin-bottom: 1rem;
         }
 
