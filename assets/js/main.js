@@ -117,7 +117,7 @@ $(window).on('scroll', function() {
           complete: function() {
             // Final value with or without '+'
             if ($this.hasClass('plus-sign')) {
-              $this.text(this.countNum + " +");
+              $this.text(this.countNum + "+");
             } else {
               $this.text(this.countNum);
             }
@@ -127,10 +127,5 @@ $(window).on('scroll', function() {
     }
   });
 });
-
-
-
-
- 
 
 

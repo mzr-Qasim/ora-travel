@@ -205,6 +205,12 @@
         display: none;
     }
 
+    .content-lists{
+        ul{
+            column-count: 1;
+        }
+    }
+
 
 
 }

@@ -1325,7 +1325,7 @@
         min-height: 80vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         img{
             position: absolute;
             width: 100%;
@@ -1347,48 +1347,59 @@
     }
 }
 
+.location-tabs{
+    display: flex;
+    justify-content: center;
+}
+
+
 .content-lists{
+    ul{
+        column-count: 3;
+    }
     .content-list-item{
-        height: 100%;
+        margin-bottom: 1.5rem;
         display: flex; 
+        justify-content: space-between;
         align-items: center;
-        position: relative;
-        margin: 0.75rem 0;
-        .content-list-item-link{
-            flex: 3;
-
-        }
-        // .content-list-item-strip{
-        //     margin: 0 1rem;
-        //     flex: 1;
-        //     height: 2px;
-        //     background-color: $primary-color;
-        //     opacity: 0;
-        //     visibility: hidden; 
-        //     transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; 
-        // }
-        .content-list-item-rating{
+        hr{
             flex: 1;
-            small{
-                color: $bootstrap-default-text-color;
-            }
+            color: $primary-color;
+            background-color: $primary-color;
+            height: 2px;
+            margin: 0 0.5rem;
+            opacity: 0;
+            visibility: hidden; 
+            transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; 
         }
-        &:hover{
-            // .content-list-item-strip{
-            //     opacity: 1; 
-            //     visibility: visible; 
-            //     transition: opacity 0.5s ease-in-out, visibility 0s 0s; 
-            // }
-            .content-list-item-rating{
-                small{
-                    color: $primary-color;
-                }
 
-            }   
+        &:hover{
+            hr{
+                opacity: 1; 
+                visibility: visible; 
+                transition: opacity 0.5s ease-in-out, visibility 0s 0s; 
+            }
+            small{
+                color: $primary-color;
+            }
 
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1424,7 +1435,7 @@
             figcaption {
                 border-left: 4px solid $primary-color;
                 width: 50%;
-                padding: 2rem 3rem;
+                padding: 2rem;
                 background-color: $white-color;
                 position: absolute;
                 bottom: 0;
@@ -1538,7 +1549,7 @@
                 width: 2rem;
                 height: 1px;
                 background-color: $white-color;
-                bottom: 0;
+                bottom: -20%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 opacity: 0;
