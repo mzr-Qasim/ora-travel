@@ -12367,13 +12367,17 @@ select:focus {
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-  color: #003b6c;
+  color: #00d9ec;
   background-color: transparent;
   border: 0;
 }
 
 .nav-tabs {
   --bs-nav-tabs-border-width: 0;
+}
+
+.tab-button-style:hover {
+  color: #00d9ec;
 }
 
 .info-bar {
