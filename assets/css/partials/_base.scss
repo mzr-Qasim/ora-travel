@@ -275,23 +275,45 @@ select{
 
 
 
-.tab-button-style{
-    position: relative;
 
-    &::after{
-        content: '';
-        position: absolute;
-        width: 1rem;
-        height: 1rem;
-        border-radius: 50%;
-        background-color: $secondary-color;
-        top: -10%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-    &:hover{
-        &::after{
-            background-color: $primary-color;        
-        }
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .tab-button-style{
+//     position: relative;
+//     &::after{
+//         content: '';
+//         position: absolute;
+//         width: 1rem;
+//         height: 1rem;
+//         border-radius: 50%;
+//         background-color: $secondary-color;
+//         top: -10%;
+//         left: 50%;
+//         transform: translate(-50%,-50%);
+//     }
+//     &:hover{
+//         &::after{
+//             background-color: $primary-color;        
+//         }
+//     }
+// }
