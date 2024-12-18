@@ -13639,6 +13639,13 @@ select:focus {
   .nav-tabs .nav-link:not(.nav-link.active):hover::after, .nav-tabs .nav-item.show .nav-link:not(.nav-link.active):hover::after {
     background-color: #00d9ec;
   }
+  .nav-tabs {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-tabs li button {
+    padding-top: 1rem;
+  }
   .talk-to-local-inner {
     flex-direction: column;
   }

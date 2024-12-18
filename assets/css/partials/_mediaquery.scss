@@ -133,29 +133,39 @@
 
    // around-the-world-section
    .nav-tabs .nav-link, .nav-tabs .nav-item.show .nav-link {
-    &::after{
-        content: '';
-        position: absolute;
-        width: calc(0.8rem + .2vw);
-        height: calc(0.8rem + .2vw);
-        background-color: $secondary-color;
-        border-radius: 50%;
-        left: 0%;
-        top: 50%;
-        transform: translate(-50%,-50%);
-        transition: ease-in .4s;
-        
-    }
+        &::after{
+            content: '';
+            position: absolute;
+            width: calc(0.8rem + .2vw);
+            height: calc(0.8rem + .2vw);
+            background-color: $secondary-color;
+            border-radius: 50%;
+            left: 0%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            transition: ease-in .4s;
 
-    &:not(.nav-link.active){
-        &:hover{
-            &::after{
-                background-color: $primary-color;
+        }
+
+        &:not(.nav-link.active){
+            &:hover{
+                &::after{
+                    background-color: $primary-color;
+                }
             }
         }
+    
     }
 
-    
+
+.nav-tabs{
+    display: flex;
+    flex-direction: column;
+    li{
+        button{
+            padding-top: 1rem;
+        }
+    }
 }
 
 
