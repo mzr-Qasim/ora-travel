@@ -13326,6 +13326,20 @@ select:focus {
   margin-bottom: 6rem;
 }
 
+.around-the-world-section-title {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.around-the-world-section-title h4, .around-the-world-section-title .h4 {
+  font-size: calc(1.3rem + 0.2vw);
+  font-weight: 600;
+  color: #003b6c;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
 .around-the-world-section .around-the-world-section-inner {
   position: relative;
   min-height: 80vh;
@@ -13348,31 +13362,31 @@ select:focus {
   margin-bottom: 6rem;
 }
 .location-tabs .nav-tabs .tab-button-style .buttons-content figure {
-  width: 100%;
-  aspect-ratio: 1/0.8;
+  position: relative;
+  width: 150px;
+  aspect-ratio: 1/1;
+  margin-bottom: 1rem;
 }
 .location-tabs .nav-tabs .tab-button-style .buttons-content figure img {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
   opacity: 0.5;
   -o-object-fit: cover;
      object-fit: cover;
   transition: ease-in 0.4s;
 }
-.location-tabs .nav-tabs .tab-button-style .buttons-content figure figcaption {
-  position: absolute;
-  width: 100%;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.location-tabs .nav-tabs .tab-button-style .buttons-content figure figcaption h4, .location-tabs .nav-tabs .tab-button-style .buttons-content figure figcaption .h4 {
+.location-tabs .nav-tabs .tab-button-style .buttons-content figcaption h4, .location-tabs .nav-tabs .tab-button-style .buttons-content figcaption .h4 {
   font-size: calc(0.8rem + 0.2vw);
   font-weight: 600;
-  letter-spacing: 2px;
+  text-align: center;
 }
 .location-tabs .nav-tabs .tab-button-style:hover figure img {
+  opacity: 1;
+}
+.location-tabs .nav-tabs .tab-button-style:focus figure img {
   opacity: 1;
 }
 
@@ -13381,7 +13395,6 @@ li button {
   font-size: calc(1rem + 0.2vw);
   font-weight: 500;
   letter-spacing: 2px;
-  padding-top: 3rem;
 }
 
 .content-lists ul {
@@ -13626,6 +13639,10 @@ li button {
   }
   .nav-tabs li button {
     padding-top: 1rem;
+  }
+  .content-lists ul {
+    -moz-column-count: 2;
+         column-count: 2;
   }
   .talk-to-local-inner {
     flex-direction: column;

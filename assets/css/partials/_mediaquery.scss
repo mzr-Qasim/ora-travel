@@ -142,10 +142,16 @@
     }
 }
 
+.content-lists{
+    ul{
+        column-count: 2;
+    }
+}
 
 
 
 
+    // talk to local section
     .talk-to-local-inner{
         flex-direction: column;
         .left-section{
