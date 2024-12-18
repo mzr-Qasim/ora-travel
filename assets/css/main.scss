@@ -1325,7 +1325,7 @@
         min-height: 80vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         img{
             position: absolute;
             width: 100%;
@@ -1347,10 +1347,43 @@
     }
 }
 
+.map-svg{
+    position: relative;
+    figure{
+        width: 100%;
+        aspect-ratio: 1/.5;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+
+
 .location-tabs{
 
     display: flex;
     justify-content: center;
+    margin-bottom: $section-space-large;
+}
+
+
+.nav-tabs{
+    li{
+        button{
+            position: relative;
+            font-size: calc(1rem + .2vw);
+            font-weight: 500;
+            letter-spacing: 2px;
+            padding-top: 3rem;
+
+           
+        }
+    }
 }
 
 

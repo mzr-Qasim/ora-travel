@@ -12,7 +12,7 @@ var swiper = new Swiper(".mySwiper", {
     touchStartPreventDefault: true,
    
 });
-
+  
 
 
 
