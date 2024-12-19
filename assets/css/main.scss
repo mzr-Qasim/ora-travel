@@ -1667,25 +1667,61 @@
 
 
 
+// blogs
+
+.blogs{
+    margin-bottom: $section-space-large;
+}
 
 
+.blog-card{
+    height: 100%;
+    figure{
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1/.8;
+        margin-bottom: 1rem;
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    figcaption{
+        .date-para{
+            margin-bottom: $text-space-xs-small;
+            span{
+                margin-right: 1rem;
+                i{
+                    color: $bootstrap-default-text-color;
+                }
+            }
+        }
+        .blog-link{
+            font-size: calc(0.9rem + .2vw);
+            font-weight: 500;
+            color: $black-color;
+            display: block;
+            margin-bottom: $text-space-large;
+        }
+        .read-more-link{
+            color: $secondary-color;        
+            background-color: $secondary-text-color;
+            font-weight: 500;
+            font-size: calc(0.6rem + .2vw);
+            span{
+                i{
+                    font-size: 100%;
+                }
+            }
+        }
+    }
+}
 
 // footer
 
-.footer-links{
-    position: relative;
-    background-color: red;
 
-    .bgc-img{
-        position: absolute; 
-        bottom: 0; 
-        left: 0;
-        object-fit: cover;
-
-    }
-
-    
-}
 
 
 

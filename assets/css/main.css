@@ -12165,7 +12165,7 @@ textarea.form-control-lg {
   }
 }
 .partial-container-right {
-  max-width: calc((1320px) + 50% - (1320px) / 2);
+  max-width: calc((1320px) + 50% - 1320px / 2);
   padding-left: 1rem;
   margin-left: auto;
 }
@@ -12238,7 +12238,7 @@ select:focus {
 
 .theme-links-button {
   padding: 0.5rem 1rem;
-  display: inline-flex;
+  display: inline-block;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: ease-in-out 0.3s;
@@ -13558,16 +13558,50 @@ li button {
   transition: opacity 0.5s ease-in-out, visibility 0s 0s;
 }
 
-.footer-links {
-  position: relative;
-  background-color: red;
+.blogs {
+  margin-bottom: 6rem;
 }
-.footer-links .bgc-img {
+
+.blog-card {
+  height: 100%;
+}
+.blog-card figure {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/0.8;
+  margin-bottom: 1rem;
+}
+.blog-card figure img {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.blog-card figcaption .date-para {
+  margin-bottom: 0.5rem;
+}
+.blog-card figcaption .date-para span {
+  margin-right: 1rem;
+}
+.blog-card figcaption .date-para span i {
+  color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+.blog-card figcaption .blog-link {
+  font-size: calc(0.9rem + 0.2vw);
+  font-weight: 500;
+  color: #000000;
+  display: block;
+  margin-bottom: 2rem;
+}
+.blog-card figcaption .read-more-link {
+  color: #003b6c;
+  background-color: #bfbfbf;
+  font-weight: 500;
+  font-size: calc(0.6rem + 0.2vw);
+}
+.blog-card figcaption .read-more-link span i {
+  font-size: 100%;
 }
 
 @media (max-width: 1199px) {

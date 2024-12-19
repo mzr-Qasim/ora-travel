@@ -27,7 +27,7 @@ $text-space-large: 2rem;
 $container-width: 1320px;
 
 .partial-container-right{
-    max-width: calc((#{$container-width}) + (50% - (#{$container-width}) / 2));
+    max-width: calc((#{$container-width}) + (50% - (#{$container-width}/2) ));
     padding-left: 1rem;
     margin-left: auto;
 }
@@ -112,7 +112,7 @@ select{
 
 .theme-links-button{
     padding: 0.5rem 1rem;
-    display: inline-flex;
+    display: inline-block;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: ease-in-out .3s;
