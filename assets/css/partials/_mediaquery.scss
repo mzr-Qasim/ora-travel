@@ -184,6 +184,16 @@
         }
     }
 
+    // blogs settings 
+    .blogs{
+        .row [class^="col-"] {
+            &:not(:last-child){
+                padding-bottom: 2rem;
+            }
+        }
+
+    }
+
 
 
 

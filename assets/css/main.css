@@ -13577,6 +13577,17 @@ li button {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -2;
+}
+.blog-card figure img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+  z-index: 1;
 }
 .blog-card figcaption .date-para {
   margin-bottom: 0.5rem;
@@ -13594,6 +13605,9 @@ li button {
   display: block;
   margin-bottom: 2rem;
 }
+.blog-card figcaption .blog-link:hover {
+  color: #00d9ec;
+}
 .blog-card figcaption .read-more-link {
   color: #003b6c;
   background-color: #bfbfbf;
@@ -13602,6 +13616,13 @@ li button {
 }
 .blog-card figcaption .read-more-link span i {
   font-size: 100%;
+}
+.blog-card figcaption .read-more-link:hover {
+  background-color: #003b6c;
+  color: #FFFFFF;
+}
+.blog-card:hover img::after {
+  transform: translateY(0);
 }
 
 @media (max-width: 1199px) {
@@ -13721,6 +13742,9 @@ li button {
   }
   .counter-animation-inner .row [class^=col-] {
     padding: 1rem 0;
+  }
+  .blogs .row [class^=col-]:not(:last-child) {
+    padding-bottom: 2rem;
   }
 }
 @media (max-width: 567px) {

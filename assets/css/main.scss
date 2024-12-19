@@ -1686,6 +1686,18 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            z-index: -2;
+
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: red;
+                transform: translateY(-100%);
+                transition: transform 0.5s ease;
+                z-index: 1;
+            }
         }
     }
     figcaption{
@@ -1704,6 +1716,9 @@
             color: $black-color;
             display: block;
             margin-bottom: $text-space-large;
+            &:hover{
+                color: $primary-color;
+            }
         }
         .read-more-link{
             color: $secondary-color;        
@@ -1715,6 +1730,20 @@
                     font-size: 100%;
                 }
             }
+            &:hover{
+                background-color: $secondary-color;
+                color: $white-color;
+            }
+        }
+    }
+
+    &:hover{
+        img{
+            &::after{
+                transform: translateY(0);
+            }
+
+
         }
     }
 }
