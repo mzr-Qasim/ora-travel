@@ -1378,7 +1378,7 @@
                     position: relative;
                     width: 150px;
                     aspect-ratio: 1/1;
-                    margin-bottom: 1rem;
+                    margin-bottom: 2rem;
                     img{
                         position: absolute;
                         width: 100%;
@@ -1391,12 +1391,14 @@
                     }
                 }
                 figcaption{
-
+                    text-align: center;  
                     h4{
                         font-size: calc(0.8rem + .2vw);
-                        font-weight: 600;
-                        // letter-spacing: 2px;    
-                        text-align: center;  
+                        font-weight: 600; 
+                        margin-bottom: $text-space-xs-small;
+                    }
+                    p{
+                        color: $bootstrap-default-text-color;
                     }
                 }
             }
@@ -1666,6 +1668,24 @@
 
 
 
+
+
+// footer
+
+.footer-links{
+    position: relative;
+    background-color: red;
+
+    .bgc-img{
+        position: absolute; 
+        bottom: 0; 
+        left: 0;
+        object-fit: cover;
+
+    }
+
+    
+}
 
 
 
