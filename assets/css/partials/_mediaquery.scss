@@ -208,6 +208,40 @@
 
     }
 
+    //footer
+    // footer-follow-us-bar-inner
+    .footer-follow-us-bar-inner{
+        flex-direction: column;
+
+        ul.left-links{
+            margin-bottom: 2rem;
+        }
+    }
+
+
+
+    // footer-copyright-section-inner
+    .footer-copyright-section-inner{
+        flex-direction: column;
+        small{
+            margin-bottom: 1rem;
+        }
+        .links{
+            ul{
+                flex-direction: column;
+                li{
+                    &:not(:last-child){
+                        margin-right: 0;
+                        margin-bottom: 0.5rem;
+                        padding-right: 0;
+                        border-right: 0!important;
+                    }
+                }
+            }
+        }
+    }
+
+
 
 
 

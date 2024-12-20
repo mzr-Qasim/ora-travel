@@ -13980,6 +13980,27 @@ li button {
   .blogs .row [class^=col-]:not(:last-child) {
     padding-bottom: 2rem;
   }
+  .footer-follow-us-bar-inner {
+    flex-direction: column;
+  }
+  .footer-follow-us-bar-inner ul.left-links {
+    margin-bottom: 2rem;
+  }
+  .footer-copyright-section-inner {
+    flex-direction: column;
+  }
+  .footer-copyright-section-inner small, .footer-copyright-section-inner .small {
+    margin-bottom: 1rem;
+  }
+  .footer-copyright-section-inner .links ul {
+    flex-direction: column;
+  }
+  .footer-copyright-section-inner .links ul li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+    padding-right: 0;
+    border-right: 0 !important;
+  }
 }
 @media (max-width: 567px) {
   .mySwiper2 .swiper-slide .shutter .destinations-link {
