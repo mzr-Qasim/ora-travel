@@ -13815,6 +13815,7 @@ li button {
 }
 .subsribe-letter-section-inner .right-section ul li .info-text a {
   color: #000000;
+  font-size: calc(0.7rem + 0.2vw);
 }
 .subsribe-letter-section-inner .right-section ul li .info-text a:hover {
   color: #003b6c;

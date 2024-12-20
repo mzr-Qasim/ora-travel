@@ -1977,6 +1977,8 @@
                     }
                     a{
                         color: $black-color;
+                        font-size: calc(.7rem + .2vw);
+
                         &:hover{
                             color: $secondary-color;
                         }
