@@ -13770,9 +13770,8 @@ li button {
   color: #000000;
   font-weight: 500;
   left: 90%;
-  padding-right: 5rem;
   height: 3rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
   background-color: transparent;
   transform: translate(-50%, -50%);
   transition: ease-in 0.5s;
