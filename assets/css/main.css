@@ -13743,6 +13743,122 @@ li button {
   padding: 2rem 0;
 }
 
+.subsribe-letter-section-inner .left-section {
+  width: 100%;
+  height: 100%;
+}
+.subsribe-letter-section-inner p {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.subsribe-letter-section-inner .email-bar {
+  display: flex;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.subsribe-letter-section-inner .email-bar input {
+  width: 100%;
+  height: 3.5rem;
+  padding-left: 2rem;
+  padding-right: 8rem;
+  border: 1px solid black;
+}
+.subsribe-letter-section-inner .email-bar button {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  color: #000000;
+  font-weight: 500;
+  left: 90%;
+  padding-right: 5rem;
+  height: 3rem;
+  padding-left: 2rem;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+  transition: ease-in 0.5s;
+}
+.subsribe-letter-section-inner .email-bar button::after {
+  content: "";
+  position: absolute;
+  height: 2rem;
+  width: 2px;
+  background-color: #000000;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  transition: ease-in 0.5s;
+}
+.subsribe-letter-section-inner .email-bar button:hover {
+  color: #00d9ec;
+}
+.subsribe-letter-section-inner .email-bar button:hover::after {
+  background-color: #00d9ec;
+}
+
+.subsribe-letter-section-inner .right-section ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.subsribe-letter-section-inner .right-section ul li {
+  padding: 1rem 2rem;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+}
+.subsribe-letter-section-inner .right-section ul li i {
+  font-size: calc(1.5rem + 0.2vw);
+  margin-right: 1rem;
+}
+.subsribe-letter-section-inner .right-section ul li .info-text small, .subsribe-letter-section-inner .right-section ul li .info-text .small {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: calc(0.7rem + 0.2vw);
+}
+.subsribe-letter-section-inner .right-section ul li .info-text a {
+  color: #000000;
+}
+.subsribe-letter-section-inner .right-section ul li .info-text a:hover {
+  color: #003b6c;
+}
+.subsribe-letter-section-inner .right-section ul li:nth-child(odd) {
+  border-right: 1px solid black;
+}
+.subsribe-letter-section-inner .right-section ul li:nth-child(even) {
+  padding-right: 0;
+}
+
+.footer-copyright-section {
+  border-top: 1px solid rgba(191, 191, 191, 0.5);
+  padding: 1rem 0;
+}
+.footer-copyright-section .footer-copyright-section-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-copyright-section .footer-copyright-section-inner .links ul {
+  display: flex;
+}
+.footer-copyright-section .footer-copyright-section-inner .links ul li:not(:last-child) {
+  margin-right: 1rem;
+  padding-right: 0.5rem;
+  border-right: 1px solid black;
+}
+.footer-copyright-section .footer-copyright-section-inner .links ul li a {
+  font-weight: 300;
+  color: #000000;
+}
+.footer-copyright-section .footer-copyright-section-inner .links ul li a:hover {
+  color: #003b6c;
+}
+
+@media (max-width: 1830px) {
+  .footer-links-section figure.left-image {
+    display: none;
+  }
+  .footer-links-section figure.right-image {
+    display: none;
+  }
+}
 @media (max-width: 1199px) {
   .contact-info {
     display: none;
