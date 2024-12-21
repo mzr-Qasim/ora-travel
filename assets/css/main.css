@@ -12519,6 +12519,10 @@ select:focus {
   transform: translate(-50%, -50%);
   z-index: 10;
 }
+.form .tabs .nav-tabs {
+  display: flex;
+  justify-content: center;
+}
 .form .tabs button.hotels-button {
   color: #003b6c;
   background-color: #FFFFFF;
@@ -13577,6 +13581,18 @@ li button {
   margin-bottom: 6rem;
 }
 
+.blogs-title {
+  margin-bottom: 2rem;
+}
+.blogs-title h4, .blogs-title .h4 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: calc(1.3rem + 0.2vw);
+  font-weight: 600;
+  color: #003b6c;
+  letter-spacing: 2px;
+}
+
 .blog-card {
   height: 100%;
 }
@@ -13908,6 +13924,9 @@ li button {
   }
   .main-navbar .contact-info {
     display: flex;
+  }
+  .main-navbar .contact-info .contact-info-inner::after {
+    width: auto;
   }
   .title {
     top: 20%;

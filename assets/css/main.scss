@@ -188,6 +188,11 @@
     z-index: 10;
 
     .tabs {
+        .nav-tabs{
+            display: flex;
+            justify-content: center;
+        }
+
         button.hotels-button {
             color: $secondary-color;
             background-color: $white-color;
@@ -1684,6 +1689,30 @@
 
 .blogs{
     margin-bottom: $section-space-large;
+}
+
+.blogs-title{
+    margin-bottom: $section-space-xs-small;
+    h4 {
+        position: relative;
+        text-transform: uppercase;
+        font-size: calc(1.3rem + .2vw);
+        font-weight: 600;
+        color: $secondary-color;
+        letter-spacing: 2px;
+    
+        // &::after {
+        //     position: absolute;
+        //     content: "";
+        //     top: 50%;
+        //     width: 1.5rem;
+        //     height: 2px;
+        //     background-color: $pseudo-element-decoration-color;
+        //     right: -50px;
+        //     transform: translate(-50%, -50%);
+        // }
+    
+    }
 }
 
 

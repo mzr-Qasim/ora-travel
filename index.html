@@ -122,57 +122,127 @@
                             <div class="form">
                                 <div class="container">
                                     <div class="tabs">
-                                        <button class="theme-tab-button hotels-button"><i
+                                        <nav>
+                                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                              <button class="nav-link active theme-tab-button hotels-button" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i
+                                                class="icon-key-icon"></i><span>hotels</span></button>
+                                              <button class="nav-link theme-tab-button packages-button" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i
+                                                class="icon-briefcase"></i><span>packages</span></button>
+                                            </div>
+                                          </nav>
+                                          <div class="tab-content" id="nav-tabContent">
+                                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0"> <div class="search-fields">
+                                                <ul>
+                                                    <li>
+                                                        <div class="content reservation-date">
+                                                            <input class="theme-input-hero-section" type="text"
+                                                                placeholder="Arrival Date">
+                                                            <i class="icon-calendar-check"></i>
+                                                        </div><!-- /.content -->
+                                                    </li>
+                                                    <li>
+                                                        <div class="content reservation-date">
+                                                            <input class="theme-input-hero-section" type="text"
+                                                                placeholder="Departure Date">
+                                                            <i class="icon-calendar-check"></i>
+                                                        </div><!-- /.content -->
+                                                    </li>
+                                                    <li>
+                                                        <div class="content">
+                                                            <select class="theme-input-hero-section"
+                                                                aria-label="Default select example">
+                                                                <option selected>Adults</option>
+                                                                <option value="1">2</option>
+                                                                <option value="2">3</option>
+                                                                <option value="3">4</option>
+                                                                <option value="4">5</option>
+                                                            </select>
+                                                        </div><!-- /.content -->
+                                                    </li>
+                                                    <li>
+                                                        <div class="content">
+                                                            <select class="theme-input-hero-section"
+                                                                aria-label="Default select example">
+                                                                <option selected>Children</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                            </select>
+                                                        </div><!-- /.content -->
+                                                    </li>
+                                                    <li>
+                                                        <button class="theme-input-hero-section" type="submit"><i
+                                                                class="icon-search"></i></button>
+                                                    </li>
+                                                </ul>
+                                            </div><!-- /.search-fields --></div>
+                                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                                                <div class="search-fields">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="content">
+                                                                <select class="theme-input-hero-section"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Select type</option>
+                                                                    <option value="1">Cultural</option>
+                                                                    <option value="2">Home Stay</option>
+                                                                    <option value="3">Weekend Trips</option>
+                                                                </select>
+                                                            </div><!-- /.content -->
+                                                        </li>
+                                                        <li>
+                                                            <div class="content">
+                                                                <select class="theme-input-hero-section"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Select activity</option>
+                                                                    <option value="1">Mountain Trails Escape</option>
+                                                                    <option value="2">Coastal Road Adventure</option>
+                                                                    <option value="3">Desert Oasis Journey</option>
+                                                                    <option value="4">Cultural Heritage Tour</option>
+                                                                    <option value="5">Northern Lights Expedition</option>
+                                                                    <option value="6">Luxury Cruise Voyage</option>
+                                                                    <option value="7">Alpine Summit Trek</option>
+                                                                </select>
+                                                            </div><!-- /.content -->
+                                                        </li>
+                                                        <li>
+                                                            <div class="content">
+                                                                <select class="theme-input-hero-section"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Select destination</option>
+                                                                    <option value="1">Australia</option>
+                                                                    <option value="2">France</option>
+                                                                    <option value="3">Paris</option>
+                                                                    <option value="4">Vietnam</option>
+                                                                </select>
+                                                            </div><!-- /.content -->
+                                                        </li>
+                                                        <li>
+                                                            <div class="content">
+                                                                <select class="theme-input-hero-section"
+                                                                    aria-label="Default select example">
+                                                                    <option selected>Select route</option>
+                                                                    <option value="1">River Cruise Discovery</option>
+                                                                    <option value="2">Desert Oasis Journey</option>
+                                                                    <option value="3">Countryside Retreat Tour</option>
+                                                                    <option value="4">Alpine Summit Trek</option>
+                                                                </select>
+                                                            </div><!-- /.content -->
+                                                        </li>
+                                                        <li>
+                                                            <button class="theme-input-hero-section" type="submit"><i
+                                                                    class="icon-search"></i></button>
+                                                        </li>
+                                                    </ul>
+                                                </div><!-- /.search-fields -->
+                                            </div>
+                                          </div>
+                                        <!-- <button class="theme-tab-button hotels-button"><i
                                                 class="icon-key-icon"></i><span>hotels</span>
                                         </button>
                                         <button class="theme-tab-button packages-button"><i
                                                 class="icon-briefcase"></i><span>packages</span>
-                                        </button>
+                                        </button> -->
                                     </div><!-- /.tabs -->
-                                    <div class="search-fields">
-                                        <ul>
-                                            <li>
-                                                <div class="content reservation-date">
-                                                    <input class="theme-input-hero-section" type="text"
-                                                        placeholder="Arrival Date">
-                                                    <i class="icon-calendar-check"></i>
-                                                </div><!-- /.content -->
-                                            </li>
-                                            <li>
-                                                <div class="content reservation-date">
-                                                    <input class="theme-input-hero-section" type="text"
-                                                        placeholder="Departure Date">
-                                                    <i class="icon-calendar-check"></i>
-                                                </div><!-- /.content -->
-                                            </li>
-                                            <li>
-                                                <div class="content">
-                                                    <select class="theme-input-hero-section"
-                                                        aria-label="Default select example">
-                                                        <option selected>Adults</option>
-                                                        <option value="1">2</option>
-                                                        <option value="2">3</option>
-                                                        <option value="3">4</option>
-                                                        <option value="4">5</option>
-                                                    </select>
-                                                </div><!-- /.content -->
-                                            </li>
-                                            <li>
-                                                <div class="content">
-                                                    <select class="theme-input-hero-section"
-                                                        aria-label="Default select example">
-                                                        <option selected>Children</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                    </select>
-                                                </div><!-- /.content -->
-                                            </li>
-                                            <li>
-                                                <button class="theme-input-hero-section" type="submit"><i
-                                                        class="icon-search"></i></button>
-                                            </li>
-                                        </ul>
-                                    </div><!-- /.search-fields -->
                                 </div><!-- /.container -->
                             </div><!-- /.form -->
                         </div><!-- /.swiper-wrapper-->
@@ -2076,6 +2146,9 @@
     </section><!-- /.counter-animation-section -->
     <section class="blogs">
             <div class="partial-container-right">
+                <div class="blogs-title">
+                    <h4>OUR BLOGS</h4>
+                </div><!-- /.blogs-title -->
                 <div class="blogs-inner">
                     <div class="row">
                         <div class="col-md-6 col-lg-3">
