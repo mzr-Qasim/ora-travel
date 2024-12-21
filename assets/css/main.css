@@ -13674,26 +13674,17 @@ li button {
 .footer-links-inner {
   padding: 5rem 0;
 }
+.footer-links-inner .footer-links-col-inner p.list-title {
+  font-weight: bold;
+  color: #003b6c;
+  margin-bottom: 2rem;
+  position: relative;
+}
 .footer-links-inner .footer-links-col-inner li:not(:last-child) {
   margin-bottom: 1rem;
 }
 .footer-links-inner .footer-links-col-inner li:first-child {
   margin-bottom: 2rem;
-}
-.footer-links-inner .footer-links-col-inner li p {
-  font-weight: bold;
-  color: #003b6c;
-  position: relative;
-}
-.footer-links-inner .footer-links-col-inner li p::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 2rem;
-  background-color: #ffd838;
-  top: 50%;
-  right: 0;
-  transform: translate(-50%, -50%);
 }
 .footer-links-inner .footer-links-col-inner li a {
   position: relative;
@@ -13713,22 +13704,6 @@ li button {
 }
 .footer-links-inner .footer-links-col-inner li a:hover {
   color: #003b6c;
-}
-.footer-links-inner p.logos-list-title {
-  font-weight: bold;
-  color: #003b6c;
-  margin-bottom: 2rem;
-  position: relative;
-}
-.footer-links-inner p.logos-list-title::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 2rem;
-  background-color: #ffd838;
-  top: 50%;
-  right: 0;
-  transform: translate(-50%, -50%);
 }
 .footer-links-inner ul.footer-logos-list {
   display: flex;
@@ -14040,6 +14015,18 @@ li button {
   .footer-follow-us-bar-inner ul.left-links {
     margin-bottom: 2rem;
   }
+  .subsribe-letter-section-inner .row [class^=col-]:not(:last-child) {
+    padding-bottom: 2rem;
+  }
+  .subsribe-letter-section-inner .right-section ul {
+    flex-direction: column;
+  }
+  .subsribe-letter-section-inner .right-section ul li {
+    padding: 1rem 0rem;
+  }
+  .subsribe-letter-section-inner .right-section ul li:nth-child(odd) {
+    border-right: 0;
+  }
   .footer-copyright-section-inner {
     flex-direction: column;
   }
@@ -14072,6 +14059,21 @@ li button {
   }
   .packages-nav-prev {
     display: none;
+  }
+  .footer-follow-us-bar .footer-follow-us-bar-inner ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-follow-us-bar .footer-follow-us-bar-inner ul li {
+    margin-bottom: 2rem;
+  }
+  .footer-follow-us-bar .footer-follow-us-bar-inner ul.left-links li:not(:last-child) {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+  }
+  .footer-follow-us-bar .footer-follow-us-bar-inner ul.right-links li:not(:last-child) {
+    margin-right: 0;
   }
   .footer-links-inner ul.footer-logos-list {
     flex-direction: column;
