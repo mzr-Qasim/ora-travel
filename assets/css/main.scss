@@ -1850,11 +1850,33 @@
                 }
             }
         }
+        
+    }
+    p.logos-list-title{
+        font-weight: bold;
+        color: $secondary-color;
+        margin-bottom: 2rem;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 2rem;
+            background-color: $pseudo-element-decoration-color;
+            top: 50%;
+            right: 0;
+            transform: translate(-50%,-50%);
+        }
+    }
+    ul.footer-logos-list{
+        display: flex; 
+        flex-wrap: wrap;
         .footer-links-logos{
             width: 50%;
+            margin-bottom: 1rem;
             figure{
                 position: relative;
-                width: 100%;
+                width: 100px;
                 aspect-ratio: 1/1;
                 img{
                     position: absolute;
@@ -1864,6 +1886,7 @@
                 }
             }
         }
+
     }
 }
 

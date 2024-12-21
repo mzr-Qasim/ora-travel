@@ -209,6 +209,17 @@
     }
 
     //footer
+    // footer-links-inner
+    .footer-links-inner{
+        .row [class^="col-"] {
+            &:not(:last-child){
+                padding-bottom: 3rem;
+            }
+        
+
+        }    
+
+    }
     // footer-follow-us-bar-inner
     .footer-follow-us-bar-inner{
         flex-direction: column;
@@ -286,7 +297,13 @@
     }
 
   
+    // footer
+    .footer-links-inner{
+        ul.footer-logos-list{
+            flex-direction: column;
 
+        }
+    }
 
 
 }
