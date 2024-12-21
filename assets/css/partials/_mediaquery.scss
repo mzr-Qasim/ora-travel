@@ -250,7 +250,14 @@
 
 
 
+@media (max-width:768px) {
+    .content-lists{
+        ul{
+            column-count: 1;
+        }
+    }
 
+}
 
 
 
@@ -278,11 +285,7 @@
         display: none;
     }
 
-    .content-lists{
-        ul{
-            column-count: 1;
-        }
-    }
+  
 
 
 
