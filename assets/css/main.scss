@@ -196,40 +196,37 @@
             justify-content: center;
         }
 
-        button.hotels-button {
-            background-color: $white-color;
-            color: $secondary-color;
+        .tab-main-button {
+            overflow: hidden;
+            background-color: $secondary-color;
+            color: $white-color;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $white-color;
+                z-index: -1;
+                transform: translateY(-100%);
+                transition: transform .5s ease;
+
+            }
+
+           
+            &:hover{
+                color: $secondary-color;
+                &::after{
+                    transform: translateY(0);
+                }
+            }
  
 
             
         }
-
-        button.packages-button {
-            overflow: hidden;
-            color: $white-color;
-            background-color: $secondary-color;
-            position: relative;
-
-            // &::after {
-            //     content: '';
-            //     position: absolute;
-            //     top: 0;
-            //     left: 0;
-            //     width: 100%;
-            //     height: 100%;
-            //     background-color: $white-color;
-            //     z-index: 1;
-            //     transform: translateY(-100%);
-            //     transition: transform .5s ease;
-
-            // }
-
-           
-            // &:focus{
-            //     background-color: $white-color;
-            //     color: $secondary-color;
-            // }
-        }
+   
 
         button {
             i {
@@ -312,6 +309,8 @@
 
 .locations-section {
     margin-bottom: $section-space-large;
+
+    
 
     .title-locations {
         height: 100%;

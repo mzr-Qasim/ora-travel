@@ -12232,7 +12232,7 @@ select:focus {
 
 .theme-tab-button {
   padding: 1rem;
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
 }
 
@@ -12360,6 +12360,12 @@ select:focus {
   left: 93% !important;
   transform: translate(0, -50%);
   z-index: 100;
+}
+
+.tabs .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: #003b6c;
+  background-color: #FFFFFF;
+  border: 0;
 }
 
 .nav-tabs .nav-link, .nav-tabs .nav-item.show .nav-link {
@@ -12528,15 +12534,29 @@ select:focus {
   display: flex;
   justify-content: center;
 }
-.form .tabs button.hotels-button {
+.form .tabs .tab-main-button {
+  overflow: hidden;
+  background-color: #003b6c;
+  color: #FFFFFF;
+  position: relative;
+}
+.form .tabs .tab-main-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: #FFFFFF;
+  z-index: -1;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+}
+.form .tabs .tab-main-button:hover {
   color: #003b6c;
 }
-.form .tabs button.packages-button {
-  overflow: hidden;
-  color: #FFFFFF;
-  background-color: #003b6c;
-  position: relative;
+.form .tabs .tab-main-button:hover::after {
+  transform: translateY(0);
 }
 .form .tabs button i {
   z-index: 2;
