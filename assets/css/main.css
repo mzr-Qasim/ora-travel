@@ -12679,7 +12679,7 @@ select:focus {
 }
 .mySwiper2 .swiper-slide figure {
   width: 100%;
-  aspect-ratio: 1/0.7;
+  aspect-ratio: 1/0.8;
 }
 .mySwiper2 .swiper-slide figure img {
   width: 100%;
