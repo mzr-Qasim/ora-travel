@@ -12482,6 +12482,18 @@ select:focus {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  animation: zoomInOut 15s infinite ease-in-out;
+}
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1); /* Original size */
+  }
+  50% {
+    transform: scale(1.1); /* Zoom in */
+  }
+  100% {
+    transform: scale(1); /* Back to original size */
+  }
 }
 
 .title {
