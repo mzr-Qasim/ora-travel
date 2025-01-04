@@ -4,7 +4,7 @@ var swiper = new Swiper(".mySwiper", {
     zoom:true,
     
     autoplay: {
-        delay: 5000,
+        delay: 7500,
         disableOnInteraction: false,
       },
     effect: "fade",
